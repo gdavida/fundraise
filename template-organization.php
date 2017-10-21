@@ -20,7 +20,7 @@
         </div>
         <div class="col sm12 m8">
           <p class="text-left">
-            Whether you are attending a community event, volunteering at fundraisers, helping to organizing events, or contributing your thoughts and ideas and talents in other ways, giving your time to Bridges Myanmar is an invaluable way to support our community. 
+            Whether you are attending a community event, volunteering at fundraisers, helping to organizing events, or contributing your thoughts and ideas and talents in other ways, giving your time to <?php the_field('organization_name') ?> is an invaluable way to support our community. 
           </p>
         </div>
       </div>
@@ -52,7 +52,7 @@
       <div class="row">
         <div class="col s12 m9 l10">
           <article id="events" class="shown" style="margin-top:30px">
-            <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=eh2akbgitkihie7k4svqg256u8%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+            <?php the_field('google_calendar_iframe') ?>
           </article>
         </div>
       </div>
@@ -62,19 +62,41 @@
         <div class="col s12 m9 l10">
           <article id="shopping-partners" class="collapse">
             <p><span>These online stores donate money back!</span></p>
-            <p>Follow these links before shopping at these online retailers for a percentage of sales to be returned to Prescott PTO.</p>
-            <p><a href="#" target="_blank">Amazon</a></p>
-            <p><a href="#" target="_blank">Walmart</a></p>
-            <p><a href="#" target="_blank">Target</a></p>
+            <p>Follow these links before shopping at these online retailers for a percentage of sales to be returned to <?php the_field('organization_name') ?>.</p>
+            <p><a href="<?php the_field('amazon_link') ?>" target="_blank">Amazon</a></p>
+            <p><a href="<?php the_field('walmart_link') ?>" target="_blank">Walmart</a></p>
+            <p><a href="<?php the_field('target_link') ?>" target="_blank">Target</a></p>
+            
+            <!-- 
+              If there are rows of the Other Shopping Partner Links repeater, then
+              For each, do this:
+             -->
+
+              <?php if( have_rows('other_shopping_partner_links') ) { ?>
+                <?php while( have_rows('other_shopping_partner_links') ): the_row(); ?>
+                  <p>
+                    <a href="<?php the_sub_field('link') ?>" target="_blank">
+                      <?php the_sub_field('name') ?>  
+                    </a>
+                  </p>
+                  <?php the_sub_field('description') ?>
+                <?php endwhile; 
+               } ?>
+              
+            <!-- 
+              / end of Other Shipping Partner Links each
+             -->
+
           </article>
         </div>
       </div>
     </div>
+
     <div class="container store" id="store">
       <div class="row">
         <div class="col s12 m12 l12">
-          <p><span>Share your Prescott pride!</span></p>
-          <p>Purchase Prescott branded apparel and 20% of sales go directly to Prescott PTO. We have adult and children sizes of shirts, hoodies, hats, and socks, and they're shipped directly to your home.</p>
+          <p>Share your <?php the_field('organization_name'); ?> pride!</p>
+          <p>Purchase <?php the_field('organization_name'); ?> branded apparel and 20% of sales go directly to <?php the_field('organization_name'); ?>. We have adult and children sizes of shirts, hoodies, hats, and socks, and they're shipped directly to your home.</p>
           <div class="apparel-images-wrapper">
             <div class="card">
               <div class="card-image">
