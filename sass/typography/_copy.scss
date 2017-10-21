@@ -43,3 +43,9 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+.lead {
+	font-size: 20px;
+	font-family: $font-heading;
+	font-weight: $font-weight-normal;
+}

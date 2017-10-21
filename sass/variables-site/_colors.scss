@@ -25,12 +25,21 @@ $secondary-color: #00ab4e; // Green
 $tertiary-color: #F15C48; // Red
 $light-gray: #e1ddd4;
 $medium-gray: #b4b0a9;
-$dark-gray: #43423f;
+$dark-gray: #43423f;$white: #fff;
 
 
-$color-list: // Blue
+$color-list:
+			 // Blue
 			 "primary" $primary-color,
 			 // Green
 			 "secondary" $secondary-color,
 			 // Red
 			 "tertiary" $tertiary-color;
+			 // White
+			 "white" $white;
+			 // Light Gray
+			 "light-gray" $light-gray;
+			 // Medium Gray
+			 "medium-gray" $medium-gray;
+			 // Dark Gray
+			 "dark-gray" $dark-gray;
