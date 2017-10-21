@@ -1,5 +1,6 @@
 // @import "../layout/content-sidebar";
 // @import "../layout/sidebar-content";
+// @import "../layout/content-footer";
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -9,3 +10,27 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+
+/*--------------------------------------------------------------
+## Content Specific Areas
+--------------------------------------------------------------*/
+
+
+/*---------------------------
+ - /Store
+--------------------------- */
+.apparel-images-wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.card {
+	    width: 27%;
+	    margin-right: 3%;
+	    margin-top: 20px;
+	    margin-bottom: 10px;
+		img {
+			width: 100%;
+		}
+	}
+}
