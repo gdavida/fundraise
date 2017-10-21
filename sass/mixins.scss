@@ -1,0 +1,25 @@
+@mixin btn-colors($color) {
+	background: $color;
+	color: #fff;
+	border-radius: 7px;
+	text-transform: uppercase;
+	font-family: $font-heading;
+	font-weight: $font-weight-normal;
+    font-size: 18px;
+	
+	&:hover,
+	&:active,
+	&:visited {
+		background: darken($color, 15);
+		color: #fff;
+	}
+}
+@mixin bg-colors($color) {
+	background: $color;
+	color: #fff;
+	
+	a,
+	a:hover {
+		color: #fff;
+	}
+}

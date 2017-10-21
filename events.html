@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+  <body>
+    <header>
+      <div class="fixed-announcement brown lighten-1">
+        <div class="announcement">
+          <div class="container white-text"> <i class="material-icons">loyalty</i> Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</div>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="page-title">Events</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container main-nav">
+        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+          <i class="material-icons black-text">menu</i>
+        </a>
+      <div id="nav-mobile" class="side-nav fixed">
+        <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo.png"></a>
+        <p class="org-title">Bridges Myanmar</p>
+        <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
+
+        <div class="nav-items">
+          <div class="divider" style="margin-bottom: 20px;"></div>
+          <a href="about.html" class="">About</a>
+          <a href="events.html" class=""><strong>Events</strong></a>
+          <a href="shopping-partners.html" class="">Shopping Partners</a>
+          <a href="store.html" class="">Store</a>
+          <a href="sponsor.html" class="">Sponsor</a>
+          <a href="wishlist.html" class="">Wishlist</a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+      <div class="row">
+        <div class="col s12 m9 l10">
+            <article id="events" class="shown" style="margin-top:30px">
+              <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=eh2akbgitkihie7k4svqg256u8%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style="border-width:0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
+            </article>
+      </div>
+    </div>
+
+    </main>
+<footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l8 s12">
+            <h5 class="white-text">Join the Discussion</h5>
+            <p class="grey-text text-lighten-4">We have a Gitter chat room set up where you can talk directly with us. We have a Gitter chat room set up where you can talk directly with us.</p>
+            <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="https://gitter.im/Dogfalo/materialize">Chat</a>
+          </div>
+          <div class="col l4 s12" style="overflow: hidden;">
+            <h5 class="white-text">Our Goal</h5>
+            <h5>$10,000</h5>
+            <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0">
+              <div style="width:50%; background-color: gray; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014-2017 Materialize, All rights reserved.
+        <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">MIT License</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+      <script type="text/javascript"> 
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        //$('.collapsible').collapsible();
+      </script>
+    </body>
+  </html>
