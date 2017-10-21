@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Organization
+ * Note: Gives full control over design
+ * @package fundraise
+ */
+?>
 <!DOCTYPE html>
   <html>
     <head>
@@ -229,16 +236,4 @@
         </div>
       </div>
     </footer>
-
-    <!--  Scripts-->
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/bin/materialize.min.js"></script>
-      <script type="text/javascript"> 
-        // Initialize collapse button
-        $(".button-collapse").sideNav();
-        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-        //$('.collapsible').collapsible();
-      </script>
-    </body>
-  </html>
+<?php get_footer('org'); ?>
