@@ -126,10 +126,18 @@ function fundraise17_scripts() {
 //materialize
 	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/bin/materialize.min.js', array(), '', true );
 
+//jquery
+	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/bin/materialize.min.js', array(), '', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+// jQuery
+wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, true );
+wp_enqueue_script('jQuery');
+
 add_action( 'wp_enqueue_scripts', 'fundraise17_scripts' );
 
 /**
