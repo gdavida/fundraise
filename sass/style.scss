@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # Normalize
 # Materialize
+# Alignments
 # Typography
 # Elements
 # Forms
@@ -53,6 +54,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 /*--------------------------------------------------------------
 # Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Alignments
 --------------------------------------------------------------*/
 @import "normalize";
 

@@ -1,0 +1,95 @@
+/*----------------------------
+Alignments
+-----------------------------*/
+/* Margins and Paddings */
+//Define spacing list.
+//First item in the list is the size descriptor as in "none" and the second is the size "0px"
+$space-list:none 0,
+			  xxs $xxs,
+			  xs $xs,
+			  sm $sm,
+			  md $md,
+			  lg $lg,
+			  xl $xl,
+			  xxl $xxl;
+
+
+//iterate through the spacing list and generate the classes
+@each $space in $space-list {
+    //Margins
+	.m-#{nth($space, 1)} { //access first value of the list i.e "none"
+        margin: #{nth($space, 2)}; //access second value of the list i.e "0px"
+    }
+
+	.m-t-#{nth($space, 1)} {
+        margin-top: #{nth($space, 2)};
+    }
+
+	.m-r-#{nth($space, 1)} {
+        margin-right: #{nth($space, 2)};
+    }
+
+	.m-b-#{nth($space, 1)} {
+        margin-bottom: #{nth($space, 2)};
+    }
+
+	.m-l-#{nth($space, 1)} {
+        margin-left: #{nth($space, 2)};
+    }
+
+	//Paddings
+	.p-#{nth($space, 1)} {
+        padding: #{nth($space, 2)};
+    }
+
+	.p-t-#{nth($space, 1)} {
+        padding-top: #{nth($space, 2)};
+    }
+
+	.p-r-#{nth($space, 1)} {
+        padding-right: #{nth($space, 2)};
+    }
+
+	.p-b-#{nth($space, 1)} {
+        padding-bottom: #{nth($space, 2)};
+    }
+
+	.p-l-#{nth($space, 1)} {
+        padding-left: #{nth($space, 2)};
+    }
+}
+
+@media (max-width: 768px) {
+	.m-m-t-sm {
+		margin-top: $sm;
+	}
+	.m-m-t-md {
+		margin-top: $md;
+	}
+	.m-text-left {
+		text-align: left;
+	}
+	.m-text-center {
+		text-align: center;
+	}
+}
+
+/* WordPress-Added Alignment Classes */
+.alignnone {
+	margin: 0;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
