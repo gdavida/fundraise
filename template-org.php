@@ -5,53 +5,9 @@
  * @package fundraise
  */
 ?>
-<!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-  <body>
-    <header>
-
-      <nav class="top-nav">
-        <div class="container">
-          <div class="nav-wrapper">
-            <p class="page-title">Christians in Myanmar </p>
-            <p class="page-subtitle">face religious persection, extreme poverty, and limited educational opportunities.</p>
-          </div>
-        </div>
-      </nav>
-      <div class="container main-nav">
-        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
-          <i class="material-icons black-text">menu</i>
-        </a>
-      <div id="nav-mobile" class="side-nav fixed">
-        <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo.png"></a>
-        <p class="org-title">Bridges Myanmar</p>
-        <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
-
-        <div class="nav-items">
-          <div class="divider" style="margin-bottom: 20px;"></div>
-          <a href="#about" class="">About</a>
-          <a href="#events" class="">Events</a>
-          <a href="#shopping-partners" class="">Shopping Partners</a>
-          <a href="#store" class="">Store</a>
-          <a href="#sponsor" class="">Sponsor</a>
-          <a href="#wishlist" class="">Wishlist</a>
-        </div>
-      </div>
-      </div>
-    </header>
 
 
-
-
+<?php get_header('org'); ?>
 
     <main>
     <div class="container about how-to-give" id="about">
