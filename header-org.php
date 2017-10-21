@@ -34,8 +34,8 @@
   <nav class="top-nav">
     <div class="container">
       <div class="nav-wrapper">
-        <p class="page-title">Christians in Myanmar </p>
-        <p class="page-subtitle">face religious persection, extreme poverty, and limited educational opportunities.</p>
+        <p class="page-title">Title To Go Here</p>
+        <p class="page-subtitle">The message here should change depending on section they are on</p>
       </div>
     </div>
   </nav>
@@ -44,9 +44,9 @@
       <i class="material-icons black-text">menu</i>
     </a>
   <div id="nav-mobile" class="side-nav fixed">
-   <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="brand-logo">
+   <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
     <p class="org-title"><?php the_field('name_of_organization') ?></p>
-    <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
+    <p><?php the_field('organization_brief_message') ?></p>
 
     <div class="nav-items">
       <div class="divider" style="margin-bottom: 20px;"></div>
