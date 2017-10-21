@@ -5,7 +5,7 @@
   <br>
   <a href="http://materializecss.com/"><strong></strong></a>
   <br>
-  [![Waffle.io - Columns and their card count](https://badge.waffle.io/gdavida/fundraise.svg?columns=all)](http://waffle.io/gdavida/fundraise)
+  	<img src="https://badge.waffle.io/gdavida/fundraise.svg?columns=all">
 </p>
 
 ## Table of Contents
