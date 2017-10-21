@@ -23,23 +23,32 @@ $color__border-abbr: #666;
 $primary-color: #3373b8; // Blue
 $secondary-color: #00ab4e; // Green
 $tertiary-color: #F15C48; // Red
+$success-color: green;
+$warning-color: red;
+$alert-color: yellow;
 $light-gray: #e1ddd4;
 $medium-gray: #b4b0a9;
-$dark-gray: #43423f;$white: #fff;
+$dark-gray: #43423f;
+$white: #ffffff; // White
+$black: #000000; // Black
 
+$brand-colors: (
+  (primary $primary-color),
+  (secondary $secondary-color),
+  (tertiary $tertiary-color),
+  (success $success-color),
+  (warning $warning-color),
+  (alert $alert-color),
+  (light-gray $light-gray),
+  (medium-gray $medium-gray),
+  (dark-gray $dark-gray)
+);
 
-$color-list:
-			 // Blue
-			 "primary" $primary-color,
-			 // Green
-			 "secondary" $secondary-color,
-			 // Red
-			 "tertiary" $tertiary-color;
-			 // White
-			 "white" $white;
-			 // Light Gray
-			 "light-gray" $light-gray;
-			 // Medium Gray
-			 "medium-gray" $medium-gray;
-			 // Dark Gray
-			 "dark-gray" $dark-gray;
+@each $brand-color-name, $hex in $brand-colors {
+  .#{$brand-color-name}-bg {
+    background-color: #{$hex} !important;
+  }
+  .#{$brand-color-name}-text {
+    color: #{$hex} !important;
+  }
+}

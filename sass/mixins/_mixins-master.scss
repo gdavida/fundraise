@@ -55,9 +55,3 @@
 		color: #fff;
 	}
 }
-
-@each $color in $color-list {
-	.bg-brand-#{nth($color, 1)} {
-		@include bg-colors(nth($color, 2));
-    }
-}
