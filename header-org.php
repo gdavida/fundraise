@@ -10,6 +10,10 @@
  */
 
 ?>
+
+
+
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -41,7 +45,7 @@
     </a>
   <div id="nav-mobile" class="side-nav fixed">
    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="brand-logo">
-    <p class="org-title">Bridges Myanmar</p>
+    <p class="org-title"><?php the_field('name_of_organization') ?></p>
     <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
 
     <div class="nav-items">
