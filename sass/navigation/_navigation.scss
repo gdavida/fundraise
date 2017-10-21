@@ -7,3 +7,60 @@
 ## Menus
 --------------------------------------------------------------*/
 @import "menus";
+
+nav.top-nav {
+  height: 180px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-nav a i {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#nav-mobile {
+	padding: 32px 32px 0 32px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	.nav-items {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		a {
+			height: 40px;
+	    justify-content: flex-start;
+	    display: flex;
+	    padding-left: 0;
+	    color: black;
+		}
+		p a {
+			color: black;
+		}
+	}
+}
+
+.side-nav a {
+	@media screen and (max-width: 992px) {
+	  padding: 0;
+	}
+}
+
+.fixed-announcement {
+	padding: 10px 0;
+	i {
+		position: relative;
+		top: 5px;
+	}
+}
