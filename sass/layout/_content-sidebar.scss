@@ -18,3 +18,10 @@
 	clear: both;
 	width: $size__site-main;
 }
+
+// main content area clear the left nav
+header, main, footer {
+	@media screen and (min-width: 991px) {
+    padding-left: 300px;
+	}
+}
