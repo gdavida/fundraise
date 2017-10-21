@@ -18,3 +18,17 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
+
+$primary-color: #3373b8; // Blue
+$secondary-color: #00ab4e; // Green
+$tertiary-color: #F15C48; // Red
+
+$text-color: #797e81;
+$text-light: #fff;
+
+$color-list: // Blue
+			 "primary" $primary-color,
+			 // Green
+			 "secondary" $secondary-color,
+			 // Red
+			 "tertiary" $tertiary-color;
