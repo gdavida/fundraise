@@ -17,6 +17,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -38,7 +40,7 @@
       <i class="material-icons black-text">menu</i>
     </a>
   <div id="nav-mobile" class="side-nav fixed">
-    <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo.png"></a>
+   <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" class="brand-logo">
     <p class="org-title">Bridges Myanmar</p>
     <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
 

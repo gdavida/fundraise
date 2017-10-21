@@ -124,7 +124,7 @@ function fundraise17_scripts() {
 	wp_enqueue_script( 'fundraise17-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 //materialize
-	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/bin/materialize.min.js', array(), '', true );
+	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/materialize/bin/materialize.min.js', array(), '', true );
 
 //jquery
 	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/bin/materialize.min.js', array(), '', true );
