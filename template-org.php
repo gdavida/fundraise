@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Organization
- * Note: Gives full control over design
+ * Note: This is the template page for each individual organization
  * @package fundraise
  */
 ?>
