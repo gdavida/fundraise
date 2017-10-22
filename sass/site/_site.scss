@@ -21,19 +21,21 @@
  - /Org - Title Wrapper
 --------------------------- */
 .organization-template {
+	.each-section {
+		min-height: 100vh;
+	}
 	.title-wrapper {
-		background-color: $primary-color;
 		color: $white;
 		padding-top: 30px;
 	}
 	.content-wrapper {
-		min-height: 100vh;
+		margin-top: 20px;
+		padding-bottom: 80px;
 	}
 }
 
-
 /*---------------------------
- - /ORg - Store
+ - /Org - Store
 --------------------------- */
 .apparel-images-wrapper{
 	display: flex;

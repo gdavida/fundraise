@@ -14,13 +14,13 @@
   </div><!-- #content -->
 
   
-  <footer class="page-footer" id="colophon" class="site-footer">
+  <footer class="page-footer" id="colophon" class="site-footer" style="background-color: <?php the_field('brand_color'); ?>; ">
     <div class="container site-info">
       <div class="row">
         <div class="col l8 s12">
           <h5 class="white-text">The problem</h5>
           <p class="grey-text text-lighten-4"><?php the_field('organization_brief_message') ?></p>
-          <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="mailto:<?php the_field('contact_email') ?>">Contact Us</a>
+          <a class="btn waves-effect waves-light" target="_blank" href="mailto:<?php the_field('contact_email') ?>" style="background-color:<?php the_field('brand_color'); ?>; filter: darken(8%); color: black;">Contact Us</a>
         </div>
         <div class="col l4 s12" style="overflow: hidden;">
           <h5 class="white-text">Our Goal</h5>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright" style="background-color: <?php the_field('brand_color'); ?>; filter: brightness(85%);">
       <div class="container">
       © 2017 Fundraise, All rights reserved.
       </div>

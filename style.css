@@ -7765,8 +7765,10 @@ body {
   flex-direction: column; }
 
 main {
-  flex: 1 0 auto;
-  padding-left: 300px; }
+  flex: 1 0 auto; }
+  @media screen and (min-width: 992px) {
+    main {
+      padding-left: 300px; } }
   main .container {
     width: 80%; }
 
@@ -7806,15 +7808,17 @@ main {
 /*---------------------------
  - /Org - Title Wrapper
 --------------------------- */
+.organization-template .each-section {
+  min-height: 100vh; }
 .organization-template .title-wrapper {
-  background-color: #3373b8;
   color: #ffffff;
   padding-top: 30px; }
 .organization-template .content-wrapper {
-  min-height: 100vh; }
+  margin-top: 20px;
+  padding-bottom: 80px; }
 
 /*---------------------------
- - /ORg - Store
+ - /Org - Store
 --------------------------- */
 .apparel-images-wrapper {
   display: flex;
