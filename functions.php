@@ -167,3 +167,76 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+
+// NEED TO CUSTOMIZE THIS FOR MY FORM
+// // After submitting add-your-org button using a couple of the form fields we will create a new organization (== custom post type of 'institution') in draft mode using some of the data from this form
+
+
+
+// add_action("gform_after_submission_11", "create_organization_institution_from_submission", 10, 2);
+// function create_organization_institution_from_submission($entry, $form){
+// 	//First need to create the post in its basic form
+// 	$new_institution = array(
+//         'post_title'  	=> ucwords($entry[24]),
+//         'post_type'   	=> 'institution',
+//         'post_status' 	=> 'draft'
+        
+// 	);
+// 	// set my variables for the form / posts I'm referencing
+// 	$imageField = ($entry['25']); 
+// 	$url_field = ($entry['26']);
+// 	$address = ($entry['1.1']);
+// 	$suite = ($entry['1.2']);
+// 	$city = ($entry['1.3']);
+// 	$state = ($entry['1.4']);
+// 	$zipcode = ($entry['1.5']);
+// 	$phone = ($entry['6']);
+// 	$theId = wp_insert_post($new_institution); 
+// 	// Function Reference/wp insert attachment
+// 	// https://codex.wordpress.org/Function_Reference/wp_insert_attachment
+// 	// $filename should be the path to a file in the upload directory, and this is found just by referencing our entry[#]
+// 	$filename = $imageField;
+// 	// The ID of the post this attachment is for.
+// 	$parent_post_id = $theId;
+// 	// Check the type of file. We'll use this as the 'post_mime_type'.
+// 	$filetype = wp_check_filetype( basename( $filename ), null );
+// 	// Get the path to the upload directory.
+// 	$wp_upload_dir = wp_upload_dir();
+// 	// Prepare an array of post data for the attachment.
+// 	$attachment = array(
+// 		'guid'           => $wp_upload_dir['url'] . '/' . basename( $filename ), 
+// 		'post_mime_type' => $filetype['type'],
+// 		'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $filename ) ),
+// 		'post_content'   => '',
+// 		'post_status'    => 'inherit'
+// 	);
+// 	// Insert the attachment.
+// 	$attach_id = wp_insert_attachment( $attachment, $filename, $parent_post_id );
+// 	// Make sure that this file is included, as wp_generate_attachment_metadata() depends on it.
+// 	require_once( ABSPATH . 'wp-admin/includes/image.php' );
+// 	// Generate the metadata for the attachment, and update the database record.
+// 	$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+// 	wp_update_attachment_metadata( $attach_id, $attach_data );
+// 	// push the info from our GF to our post
+// 	update_field('card_image', $attach_id, $theId);
+// 	update_field('url', $url_field, $theId);
+// 	update_field('address', $address, $theId);
+// 	update_field('suite_num', $suite, $theId);
+// 	$taxonomy4 = "city";
+// 	wp_set_object_terms( $theId, $city, $taxonomy4 );
+// 	$taxonomy5 = "state";
+// 	wp_set_object_terms( $theId, $state, $taxonomy5 );
+// 	update_field('zip', $zipcode, $theId);
+// 	update_field('phone', $phone, $theId);
+// }
+// // Added custom validation for minimum word count
+// add_filter("gform_field_validation_11_10", "validate_word_count", 10, 2);
+// function validate_word_count($result, $value, $form, $field){
+//     if (strlen($value) !== 9) //required number
+//     {
+//         $result["is_valid"] = false;
+//         $result["message"] = "Please enter a 9-digit routing number";
+//     }
+//     return $result;
+// }
