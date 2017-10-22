@@ -168,7 +168,7 @@
                     <div class="card">
                       <div class="card-image">
                         <img src="<?php the_sub_field('image') ?>" />
-                        <a class="btn-floating halfway-fab waves-effect" style="background-color: <?php the_field('brand_color') ?>; filter: brightness(150%);"><i class="material-icons black-text">add</i></a>
+                        <a class="btn-floating halfway-fab waves-effect" style="background-color: <?php the_field('brand_color') ?>; filter: brightness(80%);"><i class="material-icons black-text">add</i></a>
                       </div>
                       <div class="card-content">
                         <span class="card-title"><?php the_sub_field('name') ?></span>

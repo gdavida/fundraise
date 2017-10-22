@@ -7808,12 +7808,12 @@ main {
 /*---------------------------
  - /Org - Title Wrapper
 --------------------------- */
-.organization-template .each-section {
+.single-organization .each-section {
   min-height: 100vh; }
-.organization-template .title-wrapper {
+.single-organization .title-wrapper {
   color: #ffffff;
   padding-top: 30px; }
-.organization-template .content-wrapper {
+.single-organization .content-wrapper {
   margin-top: 20px;
   padding-bottom: 80px; }
 
