@@ -7768,7 +7768,6 @@ main {
   flex: 1 0 auto;
   padding-left: 300px; }
   main .container {
-    padding-top: 200px;
     width: 80%; }
 
 /*--------------------------------------------------------------
@@ -7805,7 +7804,17 @@ main {
 ## Content Specific Areas
 --------------------------------------------------------------*/
 /*---------------------------
- - /Store
+ - /Org - Title Wrapper
+--------------------------- */
+.organization-template .title-wrapper {
+  background-color: #3373b8;
+  color: #ffffff;
+  padding-top: 30px; }
+.organization-template .content-wrapper {
+  min-height: 100vh; }
+
+/*---------------------------
+ - /ORg - Store
 --------------------------- */
 .apparel-images-wrapper {
   display: flex;

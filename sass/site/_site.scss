@@ -18,7 +18,22 @@
 
 
 /*---------------------------
- - /Store
+ - /Org - Title Wrapper
+--------------------------- */
+.organization-template {
+	.title-wrapper {
+		background-color: $primary-color;
+		color: $white;
+		padding-top: 30px;
+	}
+	.content-wrapper {
+		min-height: 100vh;
+	}
+}
+
+
+/*---------------------------
+ - /ORg - Store
 --------------------------- */
 .apparel-images-wrapper{
 	display: flex;

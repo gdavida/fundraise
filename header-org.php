@@ -31,14 +31,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fundraise17' ); ?></a>
 
 <header>
-  <nav class="top-nav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <p class="page-title">Title To Go Here</p>
-        <p class="page-subtitle">The message here should change depending on section they are on</p>
-      </div>
-    </div>
-  </nav>
   <div class="container main-nav">
     <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
       <i class="material-icons black-text">menu</i>
