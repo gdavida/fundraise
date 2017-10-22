@@ -1,6 +1,6 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
-// @import "../layout/content-footer";
+@import "../layout/content-sidebar";
+@import "../layout/sidebar-content";
+@import "../layout/content-footer";
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -18,7 +18,24 @@
 
 
 /*---------------------------
- - /Store
+ - /Org - Title Wrapper
+--------------------------- */
+.single-organization {
+	.each-section {
+		min-height: 100vh;
+	}
+	.title-wrapper {
+		color: $white;
+		padding: 30px 0;
+	}
+	.content-wrapper {
+		margin-top: 20px;
+		padding-bottom: 80px;
+	}
+}
+
+/*---------------------------
+ - /Org - Store
 --------------------------- */
 .apparel-images-wrapper{
 	display: flex;

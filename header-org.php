@@ -10,6 +10,10 @@
  */
 
 ?>
+
+
+
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -17,6 +21,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+  <!-- Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -25,33 +31,52 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fundraise17' ); ?></a>
 
 <header>
-  <nav class="top-nav">
-    <div class="container">
-      <div class="nav-wrapper">
-        <p class="page-title">Christians in Myanmar </p>
-        <p class="page-subtitle">face religious persection, extreme poverty, and limited educational opportunities.</p>
-      </div>
-    </div>
-  </nav>
   <div class="container main-nav">
     <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
       <i class="material-icons black-text">menu</i>
     </a>
-  <div id="nav-mobile" class="side-nav fixed">
-    <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo.png"></a>
-    <p class="org-title">Bridges Myanmar</p>
-    <p>Christians in Myanmar face religious persection, extreme poverty, and limited educational opportunities.</p>
+    <div id="nav-mobile" class="side-nav fixed">
+      <div class="top-wrapper">
+       <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
+        <p class="org-title"><?php the_field('name_of_organization') ?></p>
+        <br>
+        <div class="nav-items">
+          <div class="divider" style="margin-bottom: 20px;"></div>
+          <br>
+          <a href="#about" class="">About</a>
+          <a href="#events" class="">Events</a>
+          <a href="#shopping-partners" class="">Shopping Partners</a>
+          <a href="#store" class="">Store</a>
+          <a href="#sponsor" class="">Sponsor</a>
+          <a href="#wishlist" class="">Wishlist</a>
+        </div>
+        <div class="button-wrapper">
+          <a class="btn waves-effect waves-light" target="_blank" href="mailto:<?php the_field('contact_email') ?>" style="border:1px solid <?php the_field('brand_color'); ?>;">Contact Us</a>
+        </div>
+      </div>
+      <div class="nav-footer">
+        <div class="goal-wrapper" style="background-color: <?php the_field('brand_color'); ?>;">
+          <div class="text-wrapper">
+            <h6 class="white-text">Our Goal - $<?php the_field('dollar_goal') ?></h6>
+            <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
+            <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0">
+              <div style="width:50%; background-color: gray; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper" style="background-color: <?php the_field('brand_color'); ?>; filter: brightness(85%);">
+          <div class="text-wrapper">
+            <p>
+              <?php the_field('organization_brief_message') ?>
+            </p>
+            <div class="">
+              &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="nav-items">
-      <div class="divider" style="margin-bottom: 20px;"></div>
-      <a href="#about" class="">About</a>
-      <a href="#events" class="">Events</a>
-      <a href="#shopping-partners" class="">Shopping Partners</a>
-      <a href="#store" class="">Store</a>
-      <a href="#sponsor" class="">Sponsor</a>
-      <a href="#wishlist" class="">Wishlist</a>
     </div>
-  </div>
   </div>
 </header>
 

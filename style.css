@@ -7450,6 +7450,17 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
+[type="checkbox"] + label:before,
+[type="checkbox"]:not(.filled-in) + label:after {
+  left: -40px; }
+
+[type="checkbox"]:checked + label:before {
+  left: -40px; }
+
+.gform_wrapper ul.gfield_checkbox li label,
+.gform_wrapper ul.gfield_radio li label {
+  margin-left: 40px; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -7581,6 +7592,11 @@ nav.top-nav {
   position: fixed;
   top: 0;
   z-index: 2; }
+  @media screen and (min-width: 992px) {
+    nav.top-nav .container {
+      margin-left: 7%;
+      padding-top: 10px;
+      width: 60%; } }
 
 nav .nav-wrapper {
   position: relative;
@@ -7595,10 +7611,18 @@ nav .nav-wrapper {
   left: 20px; }
 
 #nav-mobile {
-  padding: 32px 32px 0 32px;
   display: flex;
-  align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between; }
+  #nav-mobile .top-wrapper {
+    padding: 32px 32px 0 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    #nav-mobile .top-wrapper .button-wrapper a {
+      background-color: #ffffff;
+      margin: 40px;
+      color: #000000; }
   #nav-mobile .nav-items {
     width: 100%;
     display: flex;
@@ -7611,6 +7635,17 @@ nav .nav-wrapper {
       color: black; }
     #nav-mobile .nav-items p a {
       color: black; }
+  #nav-mobile .nav-footer {
+    display: flex;
+    flex-direction: column; }
+    #nav-mobile .nav-footer .goal-wrapper .text-wrapper {
+      padding-top: 12px; }
+    #nav-mobile .nav-footer .text-wrapper {
+      padding: 0px 32px 16px 32px;
+      font-size: 12px; }
+  @media screen and (max-width: 991px) {
+    #nav-mobile {
+      display: none; } }
 
 @media screen and (max-width: 992px) {
   .side-nav a {
@@ -7716,6 +7751,62 @@ nav .nav-wrapper {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%; }
+
+.site-main {
+  margin: 0 25% 0 0; }
+
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+@media screen and (min-width: 991px) {
+  header .single-organization, main .single-organization, footer .single-organization {
+    padding-left: 300px; } }
+
+/*.content-area {
+	float: right;
+	margin: 0 0 0 (-$size__site-sidebar);
+	width: $size__site-main;
+}
+
+.site-main {
+	margin: 0 0 0 $size__site-sidebar;
+}*/
+.site-content .widget-area {
+  float: left;
+  overflow: hidden;
+  width: 25%; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.single-organization main {
+  flex: 1 0 auto; }
+  @media screen and (min-width: 992px) {
+    .single-organization main {
+      padding-left: 300px; } }
+  .single-organization main .container {
+    width: 80%; }
+
+@media screen and (min-width: 992px) {
+  .single-organization footer.page-footer {
+    display: none; } }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -7737,6 +7828,9 @@ nav .nav-wrapper {
   clear: both;
   margin: 0 0 1.5em; }
 
+body.page main.container {
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -7750,7 +7844,19 @@ nav .nav-wrapper {
 ## Content Specific Areas
 --------------------------------------------------------------*/
 /*---------------------------
- - /Store
+ - /Org - Title Wrapper
+--------------------------- */
+.single-organization .each-section {
+  min-height: 100vh; }
+.single-organization .title-wrapper {
+  color: #ffffff;
+  padding: 30px 0; }
+.single-organization .content-wrapper {
+  margin-top: 20px;
+  padding-bottom: 80px; }
+
+/*---------------------------
+ - /Org - Store
 --------------------------- */
 .apparel-images-wrapper {
   display: flex;
@@ -7845,7 +7951,7 @@ object {
 .gallery-caption {
   display: block; }
 
-a.brand-logo img {
+img.brand-logo {
   width: 100px; }
 
 /*# sourceMappingURL=style.css.map */
