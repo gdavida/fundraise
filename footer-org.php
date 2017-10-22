@@ -34,7 +34,7 @@
     </div>
     <div class="footer-copyright" style="background-color: <?php the_field('brand_color'); ?>; filter: brightness(85%);">
       <div class="container">
-      © 2017 Fundraise, All rights reserved.
+      &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.
       </div>
     </div>
   </footer>

@@ -35,22 +35,28 @@
     <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
       <i class="material-icons black-text">menu</i>
     </a>
-  <div id="nav-mobile" class="side-nav fixed">
-   <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
-    <p class="org-title"><?php the_field('name_of_organization') ?></p>
-    
+    <div id="nav-mobile" class="side-nav fixed">
+     <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
+      <p class="org-title"><?php the_field('name_of_organization') ?></p>
+      <br>
 
-    <div class="nav-items">
-      <div class="divider" style="margin-bottom: 20px;"></div>
-      <a href="#about" class="">About</a>
-      <a href="#events" class="">Events</a>
-      <a href="#shopping-partners" class="">Shopping Partners</a>
-      <a href="#store" class="">Store</a>
-      <a href="#sponsor" class="">Sponsor</a>
-      <a href="#wishlist" class="">Wishlist</a>
+      <div class="nav-items">
+        <div class="divider" style="margin-bottom: 20px;"></div>
+        <br>
+        <a href="#about" class="">About</a>
+        <a href="#events" class="">Events</a>
+        <a href="#shopping-partners" class="">Shopping Partners</a>
+        <a href="#store" class="">Store</a>
+        <a href="#sponsor" class="">Sponsor</a>
+        <a href="#wishlist" class="">Wishlist</a>
+      </div>
+      <p><?php the_field('organization_brief_message') ?></p>
+      <div class="nav-footer">
+        <div class="copyright-wrapper">
+        &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.
+        </div>
+      </div>
     </div>
-    <p><?php the_field('organization_brief_message') ?></p>
-  </div>
   </div>
 </header>
 
