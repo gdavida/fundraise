@@ -20,3 +20,18 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+
+// Gravity Forms Fix 
+
+[type="checkbox"] + label:before,
+[type="checkbox"]:not(.filled-in) + label:after {
+	left: -40px;
+}
+[type="checkbox"]:checked + label:before {
+	left: -40px;
+}
+.gform_wrapper ul.gfield_checkbox li label,
+.gform_wrapper ul.gfield_radio li label {
+	margin-left: 40px;
+}

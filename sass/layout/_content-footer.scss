@@ -4,15 +4,17 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto; 
-  @media screen and (min-width: 992px) {
-	  padding-left: 300px;
-  }
-  .container {
-    width: 80%;
+.single-organization {
+  main {
+    flex: 1 0 auto; 
+    @media screen and (min-width: 992px) {
+  	  padding-left: 300px;
+    }
+    .container {
+      width: 80%;
 
-	}
+  	}
+  }
 }
 
 .single-organization {

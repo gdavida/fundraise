@@ -7450,6 +7450,17 @@ input[type="submit"] {
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
 
+[type="checkbox"] + label:before,
+[type="checkbox"]:not(.filled-in) + label:after {
+  left: -40px; }
+
+[type="checkbox"]:checked + label:before {
+  left: -40px; }
+
+.gform_wrapper ul.gfield_checkbox li label,
+.gform_wrapper ul.gfield_radio li label {
+  margin-left: 40px; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -7758,17 +7769,18 @@ nav .nav-wrapper {
   width: 100%; }
 
 @media screen and (min-width: 991px) {
-  header, main, footer {
+  header .single-organization, main .single-organization, footer .single-organization {
     padding-left: 300px; } }
 
-.content-area {
-  float: right;
-  margin: 0 0 0 -25%;
-  width: 100%; }
+/*.content-area {
+	float: right;
+	margin: 0 0 0 (-$size__site-sidebar);
+	width: $size__site-main;
+}
 
 .site-main {
-  margin: 0 0 0 25%; }
-
+	margin: 0 0 0 $size__site-sidebar;
+}*/
 .site-content .widget-area {
   float: left;
   overflow: hidden;
@@ -7783,12 +7795,12 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
-main {
+.single-organization main {
   flex: 1 0 auto; }
   @media screen and (min-width: 992px) {
-    main {
+    .single-organization main {
       padding-left: 300px; } }
-  main .container {
+  .single-organization main .container {
     width: 80%; }
 
 @media screen and (min-width: 992px) {
@@ -7815,6 +7827,9 @@ main {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+body.page main.container {
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 ## Comments
