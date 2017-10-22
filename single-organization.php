@@ -6,13 +6,22 @@
  * @package fundraise
  */
 ?>
+<?php
+  $the_brand_color = "#e1ddd4";
+    $value = get_field( "brand_color" );
 
+  if($value) {
+    $the_brand_color = $value;
+  } else {
+    ;
+  }
+?>
 
 <?php get_header('org'); ?>
 
     <main>
     <div class="container-fluid each-section about how-to-give" id="about">
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
@@ -69,7 +78,7 @@
 
 
     <div class="container-fluid each-section events" id="events">
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
@@ -90,7 +99,7 @@
     </div>
 
     <div class="container-fluid each-section shopping-partners" id="shopping-partners">
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
@@ -138,7 +147,7 @@
     </div>
 
     <div class="container-fluid each-section store" id="store"> 
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
@@ -164,7 +173,7 @@
                     <div class="card">
                       <div class="card-image">
                         <img src="<?php the_sub_field('image') ?>" />
-                        <a class="btn-floating halfway-fab waves-effect" style="background-color: <?php the_field('brand_color') ?>; filter: brightness(80%);"><i class="material-icons black-text">add</i></a>
+                        <a class="btn-floating halfway-fab waves-effect" style="background-color: <?php echo $the_brand_color; ?>; filter: brightness(80%);"><i class="material-icons black-text">add</i></a>
                       </div>
                       <div class="card-content">
                         <span class="card-title"><?php the_sub_field('name') ?></span>
@@ -186,7 +195,7 @@
       </div>
     </div>
     <div class="container-fluid each-section sponsor" id="sponsor"> 
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
@@ -206,7 +215,7 @@
       </div>
     </div>
     <div class="container-fluid each-section wishlist" id="wishlist">    
-      <div class="title-wrapper" style="background-color: <?php the_field('brand_color') ?>">
+      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
