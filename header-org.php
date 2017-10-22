@@ -51,14 +51,27 @@
           <a href="#wishlist" class="">Wishlist</a>
         </div>
       </div>
-      <div class="nav-footer" style="background-color: <?php the_field('brand_color'); ?>; filter: brightness(85%);">
-        <div class="text-wrapper">
-          <p><?php the_field('organization_brief_message') ?></p>
-          <div class="copyright-wrapper">
-            &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.
+      <div class="nav-footer">
+        <div class="goal-wrapper" style="background-color: <?php the_field('brand_color'); ?>;">
+          <div class="text-wrapper">
+            <h5 class="white-text">Our Goal</h5>
+            <h5><?php the_field('dollar_goal') ?></h5>
+            <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
+            <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0">
+              <div style="width:50%; background-color: gray; height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-wrapper" style="background-color: <?php the_field('brand_color'); ?>; filter: brightness(85%);">
+          <div class="text-wrapper">
+            <p><?php the_field('organization_brief_message') ?></p>
+            <div class="">
+              &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </header>

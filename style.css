@@ -7621,8 +7621,11 @@ nav .nav-wrapper {
     #nav-mobile .nav-items p a {
       color: black; }
   #nav-mobile .nav-footer {
-    padding: 0px 32px 16px 32px;
-    font-size: 12px; }
+    display: flex;
+    flex-direction: column; }
+    #nav-mobile .nav-footer .text-wrapper {
+      padding: 0px 32px 16px 32px;
+      font-size: 12px; }
 
 @media screen and (max-width: 992px) {
   .side-nav a {
