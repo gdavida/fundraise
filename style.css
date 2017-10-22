@@ -7608,6 +7608,10 @@ nav .nav-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    #nav-mobile .top-wrapper .button-wrapper a {
+      background-color: #ffffff;
+      margin: 40px;
+      color: #000000; }
   #nav-mobile .nav-items {
     width: 100%;
     display: flex;
@@ -7623,9 +7627,14 @@ nav .nav-wrapper {
   #nav-mobile .nav-footer {
     display: flex;
     flex-direction: column; }
+    #nav-mobile .nav-footer .goal-wrapper .text-wrapper {
+      padding-top: 12px; }
     #nav-mobile .nav-footer .text-wrapper {
       padding: 0px 32px 16px 32px;
       font-size: 12px; }
+  @media screen and (max-width: 991px) {
+    #nav-mobile {
+      display: none; } }
 
 @media screen and (max-width: 992px) {
   .side-nav a {
@@ -7781,6 +7790,12 @@ main {
       padding-left: 300px; } }
   main .container {
     width: 80%; }
+
+.single-organization footer.page-footer .copyright-wrapper {
+  padding: 32px; }
+@media screen and (min-width: 992px) {
+  .single-organization footer.page-footer {
+    display: none; } }
 
 /*--------------------------------------------------------------
 ## Posts and pages

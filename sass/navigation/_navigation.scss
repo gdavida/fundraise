@@ -45,6 +45,13 @@ nav .nav-wrapper {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		.button-wrapper {
+			a {
+				background-color: $white;
+				margin:40px;
+				color: $black;
+			}
+		}
 	}
 	.nav-items {
 		width: 100%;
@@ -64,10 +71,18 @@ nav .nav-wrapper {
 	.nav-footer {
 		display: flex;
     flex-direction: column;
+    .goal-wrapper {
+    	.text-wrapper {
+    		padding-top: 12px;
+    	}
+    }
 		.text-wrapper {
 	    padding: 0px 32px 16px 32px;
   	  font-size: 12px;
 		}
+	}
+	@media screen and (max-width: 991px) {
+		display: none;
 	}
 }
 
