@@ -7600,10 +7600,14 @@ nav .nav-wrapper {
   left: 20px; }
 
 #nav-mobile {
-  padding: 32px 32px 0 32px;
   display: flex;
-  align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between; }
+  #nav-mobile .top-wrapper {
+    padding: 32px 32px 0 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
   #nav-mobile .nav-items {
     width: 100%;
     display: flex;
@@ -7616,6 +7620,9 @@ nav .nav-wrapper {
       color: black; }
     #nav-mobile .nav-items p a {
       color: black; }
+  #nav-mobile .nav-footer {
+    padding: 0px 32px 16px 32px;
+    font-size: 12px; }
 
 @media screen and (max-width: 992px) {
   .side-nav a {
