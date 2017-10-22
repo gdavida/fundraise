@@ -17,7 +17,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">About Us</p>
-              <p class="page-subtitle"><?php the_field('about_headline') ?></p>
             </div>
           </div>
         </div>
@@ -75,7 +74,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">Events</p>
-              <p class="page-subtitle"><?php the_field('event_headline') ?></p>
             </div>
           </div>
         </div>
@@ -97,7 +95,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">Shopping Partners</p>
-              <p class="page-subtitle"><?php the_field('shopping_partners_headline') ?></p>
             </div>
           </div>
         </div>
@@ -146,7 +143,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">Store</p>
-              <p class="page-subtitle"><?php the_field('store_headline') ?></p>
             </div>
           </div>
         </div>
@@ -195,7 +191,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">Sponsor</p>
-              <p class="page-subtitle"><?php the_field('sponsor_headline') ?></p>
             </div>
           </div>
         </div>
@@ -204,7 +199,6 @@
         <div class="row">
           <div class="col s12 m12 l10">
             <div id="structure" class="section scrollspy">
-              <h4><?php the_field('sponsor_headline') ?></h4>
               <p class="caption"><?php the_field('sponsor_custom_message') ?></p>
             </div>
           </div>
@@ -217,7 +211,6 @@
           <div class="row">
             <div class="col s12 m12 l10">
               <p class="page-title">Wishlist</p>
-              <p class="page-subtitle"><?php the_field('wishlist_headline') ?></p>
             </div>
           </div>
         </div>
@@ -226,7 +219,6 @@
         <div class="row">
           <div class="col s12 m12 l10">
             <div id="structure" class="section scrollspy">
-              <h4><?php the_field('wishlist_headline') ?></h4>
               <p class="caption"><?php the_field('wishlist_custom_message') ?></p>
             </div>
           </div>
