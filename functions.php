@@ -206,7 +206,7 @@ function organization() {
 		'label'                 => __( 'Organization', 'text_domain' ),
 		'description'           => __( 'Organization Post Type', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes', 'post-formats', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', 'post-formats', ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -229,12 +229,21 @@ function organization() {
 add_action( 'init', 'organization', 0 );
 
 // NEED TO CUSTOMIZE THIS FOR MY FORM
+
+	add_filter( 'gform_upload_path', function ( $path_info, $form_id ) {
+	    GFCommon::log_debug( "log_upload_path(): path_info for form #{$form_id} => " . print_r( $path_info, true ) );
+	 
+	    return $path_info;
+	}, 1, 2 );
+
+
+
 // // After submitting add-your-org button using a couple of the form fields we will create a new organization (== custom post type of 'organization') in draft mode using some of the data from this form
 
 
 
-// add_action("gform_after_submission_3", "create_organization_organization_from_submission", 10, 2);
-// function create_organization_organization_from_submission($entry, $form){
+add_action("gform_after_submission_3", "create_organization_organization_from_submission", 10, 2);
+function create_organization_organization_from_submission($entry, $form){
 // First need to create the post in its basic form
 		$new_organization = array(
 		  'post_title'  	=> ucwords($entry[1]),
@@ -254,7 +263,7 @@ add_action( 'init', 'organization', 0 );
 
 		$theId 						= wp_insert_post($new_organization); 
 
-		);
+		
 // 	// set my variables for the form / posts I'm referencing
 // 	$imageField = ($entry['25']); 
 // 	$url_field = ($entry['26']);
@@ -304,23 +313,11 @@ add_action( 'init', 'organization', 0 );
 		wp_update_attachment_metadata( $attach_id, $attach_data );
 
 		// push the info from our GF to our post
-		// update_field('acf_name', $variable_pulling_in_GF_answer, $sdaf)
+		// ex: update_field('acf_name', $variable_pulling_in_GF_answer, $postID)
 		update_field('name_of_organization', $orgName, $theId);
-		update_field('url', $url_field, $theId);
-		update_field('address', $address, $theId);
-		wp_set_object_terms( $theId, $state, $taxonomy5 );
-		update_field('zip', $zipcode, $theId);
-		update_field('phone', $phone, $theId);
-// }
-
-
-// // Added custom validation for minimum word count
-// add_filter("gform_field_validation_3_10", "validate_word_count", 10, 2);
-// function validate_word_count($result, $value, $form, $field){
-//     if (strlen($value) !== 9) //required number
-//     {
-//         $result["is_valid"] = false;
-//         $result["message"] = "Please enter a 9-digit routing number";
-//     }
-//     return $result;
-// }
+		update_field('organization_logo', $attach_id, $theId);
+		update_field('organization_brief_message', $orgDescription, $theId);
+		update_field('contact_name', $contactName, $theId);
+		update_field('contact_email', $contactEmail, $theId);
+		update_field('contact_phone', $contactPhone, $theId);
+ }
