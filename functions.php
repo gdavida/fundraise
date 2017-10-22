@@ -229,19 +229,32 @@ function organization() {
 add_action( 'init', 'organization', 0 );
 
 // NEED TO CUSTOMIZE THIS FOR MY FORM
-// // After submitting add-your-org button using a couple of the form fields we will create a new organization (== custom post type of 'institution') in draft mode using some of the data from this form
+// // After submitting add-your-org button using a couple of the form fields we will create a new organization (== custom post type of 'organization') in draft mode using some of the data from this form
 
 
 
-// add_action("gform_after_submission_11", "create_organization_institution_from_submission", 10, 2);
-// function create_organization_institution_from_submission($entry, $form){
-// 	//First need to create the post in its basic form
-// 	$new_institution = array(
-//         'post_title'  	=> ucwords($entry[24]),
-//         'post_type'   	=> 'institution',
-//         'post_status' 	=> 'draft'
-        
-// 	);
+// add_action("gform_after_submission_3", "create_organization_organization_from_submission", 10, 2);
+// function create_organization_organization_from_submission($entry, $form){
+// First need to create the post in its basic form
+		$new_organization = array(
+		  'post_title'  	=> ucwords($entry[1]),
+		  'post_type'   	=> 'organization',
+		  'post_status' 	=> 'draft'
+		);
+
+// 	// set my variables for the form / posts I'm referencing
+	
+		$orgName 					= ($entry['1']); 
+		$orgLogo 					= ($entry['2']);
+		$orgDescription 	= ($entry['3']);
+
+		$contactName 			= ($entry['5']);
+		$contactEmail 		= ($entry['6']);
+		$contactPhone 		= ($entry['7']);
+
+		$theId 						= wp_insert_post($new_organization); 
+
+		);
 // 	// set my variables for the form / posts I'm referencing
 // 	$imageField = ($entry['25']); 
 // 	$url_field = ($entry['26']);
@@ -251,46 +264,58 @@ add_action( 'init', 'organization', 0 );
 // 	$state = ($entry['1.4']);
 // 	$zipcode = ($entry['1.5']);
 // 	$phone = ($entry['6']);
-// 	$theId = wp_insert_post($new_institution); 
+// 	$theId = wp_insert_post($new_organization); 
+
+
+
 // 	// Function Reference/wp insert attachment
 // 	// https://codex.wordpress.org/Function_Reference/wp_insert_attachment
 // 	// $filename should be the path to a file in the upload directory, and this is found just by referencing our entry[#]
-// 	$filename = $imageField;
+		$filename = $orgLogo;
+
 // 	// The ID of the post this attachment is for.
-// 	$parent_post_id = $theId;
+		$parent_post_id = $theId;
+
 // 	// Check the type of file. We'll use this as the 'post_mime_type'.
-// 	$filetype = wp_check_filetype( basename( $filename ), null );
+		$filetype = wp_check_filetype( basename( $filename ), null );
+
 // 	// Get the path to the upload directory.
-// 	$wp_upload_dir = wp_upload_dir();
+		$wp_upload_dir = wp_upload_dir();
+
 // 	// Prepare an array of post data for the attachment.
-// 	$attachment = array(
-// 		'guid'           => $wp_upload_dir['url'] . '/' . basename( $filename ), 
-// 		'post_mime_type' => $filetype['type'],
-// 		'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $filename ) ),
-// 		'post_content'   => '',
-// 		'post_status'    => 'inherit'
-// 	);
-// 	// Insert the attachment.
-// 	$attach_id = wp_insert_attachment( $attachment, $filename, $parent_post_id );
-// 	// Make sure that this file is included, as wp_generate_attachment_metadata() depends on it.
-// 	require_once( ABSPATH . 'wp-admin/includes/image.php' );
-// 	// Generate the metadata for the attachment, and update the database record.
-// 	$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
-// 	wp_update_attachment_metadata( $attach_id, $attach_data );
-// 	// push the info from our GF to our post
-// 	update_field('card_image', $attach_id, $theId);
-// 	update_field('url', $url_field, $theId);
-// 	update_field('address', $address, $theId);
-// 	update_field('suite_num', $suite, $theId);
-// 	$taxonomy4 = "city";
-// 	wp_set_object_terms( $theId, $city, $taxonomy4 );
-// 	$taxonomy5 = "state";
-// 	wp_set_object_terms( $theId, $state, $taxonomy5 );
-// 	update_field('zip', $zipcode, $theId);
-// 	update_field('phone', $phone, $theId);
+		$attachment = array(
+			'guid'           => $wp_upload_dir['url'] . '/' . basename( $filename ), 
+			'post_mime_type' => $filetype['type'],
+			'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $filename ) ),
+			'post_content'   => '',
+			'post_status'    => 'inherit'
+		);
+
+
+
+		// Insert the attachment.
+		$attach_id = wp_insert_attachment( $attachment, $filename, $parent_post_id );
+
+		// Make sure that this file is included, as wp_generate_attachment_metadata() depends on it.
+		require_once( ABSPATH . 'wp-admin/includes/image.php' );
+
+		// Generate the metadata for the attachment, and update the database record.
+		$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+		wp_update_attachment_metadata( $attach_id, $attach_data );
+
+		// push the info from our GF to our post
+		// update_field('acf_name', $variable_pulling_in_GF_answer, $sdaf)
+		update_field('name_of_organization', $orgName, $theId);
+		update_field('url', $url_field, $theId);
+		update_field('address', $address, $theId);
+		wp_set_object_terms( $theId, $state, $taxonomy5 );
+		update_field('zip', $zipcode, $theId);
+		update_field('phone', $phone, $theId);
 // }
+
+
 // // Added custom validation for minimum word count
-// add_filter("gform_field_validation_11_10", "validate_word_count", 10, 2);
+// add_filter("gform_field_validation_3_10", "validate_word_count", 10, 2);
 // function validate_word_count($result, $value, $form, $field){
 //     if (strlen($value) !== 9) //required number
 //     {
