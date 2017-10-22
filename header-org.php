@@ -38,7 +38,7 @@
   <div id="nav-mobile" class="side-nav fixed">
    <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
     <p class="org-title"><?php the_field('name_of_organization') ?></p>
-    <p><?php the_field('organization_brief_message') ?></p>
+    
 
     <div class="nav-items">
       <div class="divider" style="margin-bottom: 20px;"></div>
@@ -49,6 +49,7 @@
       <a href="#sponsor" class="">Sponsor</a>
       <a href="#wishlist" class="">Wishlist</a>
     </div>
+    <p><?php the_field('organization_brief_message') ?></p>
   </div>
   </div>
 </header>
