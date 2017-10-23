@@ -34,7 +34,14 @@
           <a class="btn waves-effect waves-light" target="_blank" href="mailto:<?php the_field('contact_email') ?>" style="background-color:<?php echo $the_brand_color ?>; filter: darken(8%); color: black;">Contact Us</a>
         </div>
         <div class="col l4 s12" style="overflow: hidden;">
-          <h5 class="white-text">Our Goal - <?php the_field('dollar_goal') ?></h5>
+          <h5 class="white-text">Our Goal - $<?php 
+              $num = get_field('dollar_goal');
+              $num = (int)$num;
+              $num = number_format($num);
+              echo $num;
+            ?>
+              
+          </h5>
           <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
           <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0">
             <div style="width:50%; background-color: gray; height: 100%;"></div>
@@ -54,5 +61,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
 </body>
 </html>

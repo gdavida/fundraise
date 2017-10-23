@@ -126,9 +126,6 @@ function fundraise17_scripts() {
 //materialize
 	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/materialize/bin/materialize.min.js', array(), '', true );
 
-//materialize
-	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/bin/materialize.min.js', array(), '', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

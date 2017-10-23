@@ -67,7 +67,12 @@
       <div class="nav-footer">
         <div class="goal-wrapper" style="background-color: <?php echo $the_brand_color ?>;">
           <div class="text-wrapper">
-            <h6 class="white-text">Our Goal - $<?php the_field('dollar_goal') ?></h6>
+            <h6 class="white-text">Our Goal - $<?php 
+              $num = get_field('dollar_goal');
+              $num = (int)$num;
+              $num = number_format($num);
+              echo $num;
+            ?></h6>
             <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
             <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0">
               <div style="width:50%; background-color: gray; height: 100%;"></div>

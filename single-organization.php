@@ -55,7 +55,7 @@
             </p>
           </div>
           <div class="col sm12 m4 center ">
-            <i class="material-icons medium">attach_money</i>
+            <i class="material-icons medium">credit_card</i>
             <h5>Donate money</h5>
           </div>
         </div>
