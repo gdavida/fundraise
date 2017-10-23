@@ -14,20 +14,26 @@
 
 get_header(); ?>
 
-	<main id="main" class="site-main">
-		<div id="primary" class="content-area">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 	    <div class="container-fluid" id="about">
         <div class="container">
-        	<p>You work hard to prut together fundraisers, plan events, coordinate volunteers, and build a community of support for your organization.</p>
-					<p>When you talk about your organization, your passion shows.</p>
-					<p>People admire your enthusiasm, love the vision, and want to help. But how do people get involved?</p>
-					<p>How can people use their talents and passions to contribute?</p>
-					<p>How do you tap into your community's ?</p>
-					<p>How do you leverage passion, talent, time, and funds to increase community involvement and build your organization?</p>
+        	<?php
+						while ( have_posts() ) : the_post();
+
+							get_template_part( 'template-parts/content', 'page' );
+
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
+
+						endwhile; // End of the loop.
+						?>
 				</div>
 			</div>
-		</div><!-- #primary -->
-	</main><!-- #main -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 get_footer();
