@@ -14,11 +14,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<main id="main" class="site-main">
+		<div id="primary" class="content-area">
 	    <div class="container-fluid" id="about">
         <div class="container">
-        	<p>You work hard to put together fundraisers, plan events, coordinate volunteers, and build a community of support for your organization.</p>
+        	<p>You work hard to prut together fundraisers, plan events, coordinate volunteers, and build a community of support for your organization.</p>
 					<p>When you talk about your organization, your passion shows.</p>
 					<p>People admire your enthusiasm, love the vision, and want to help. But how do people get involved?</p>
 					<p>How can people use their talents and passions to contribute?</p>
@@ -26,8 +26,8 @@ get_header(); ?>
 					<p>How do you leverage passion, talent, time, and funds to increase community involvement and build your organization?</p>
 				</div>
 			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</div><!-- #primary -->
+	</main><!-- #main -->
 
 <?php
 get_footer();

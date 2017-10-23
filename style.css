@@ -7795,11 +7795,6 @@ nav .nav-wrapper {
   clear: both;
   width: 100%; }
 
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column; }
-
 .single-organization main {
   flex: 1 0 auto; }
   @media screen and (min-width: 992px) {
@@ -7815,6 +7810,14 @@ body {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
 .sticky {
   display: block; }
 
