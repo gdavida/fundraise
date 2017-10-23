@@ -21,11 +21,11 @@
 
     <main>
     <div class="container-fluid each-section about how-to-give" id="about">
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">About Us</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">About Us</p>
             </div>
           </div>
         </div>
@@ -38,8 +38,8 @@
         </div>
         <div class='row valign-wrapper'>
           <div class="col sm12 m4 center">
-            <i class="material-icons medium">access_time</i>
-            <h5>Share your time</h5>
+            <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">access_time</i>
+            <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Share your time</h5>
           </div>
           <div class="col sm12 m12 l10">
             <p class="text-left">
@@ -55,14 +55,14 @@
             </p>
           </div>
           <div class="col sm12 m4 center ">
-            <i class="material-icons medium">credit_card</i>
-            <h5>Donate money</h5>
+            <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">credit_card</i>
+            <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Donate money</h5>
           </div>
         </div>
         <div class='row valign-wrapper'>
             <div class="col sm12 m4 center">
-              <i class="material-icons medium">shopping_basket</i>
-              <h5>Provide supples</h5>
+              <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">shopping_basket</i>
+              <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Provide supples</h5>
             </div>
             <div class="col sm12 m8">
               <p class="text-left">
@@ -82,7 +82,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Events</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Events</p>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Shopping Partners</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Shopping Partners</p>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Store</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Store</p>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Sponsor</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Sponsor</p>
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Wishlist</p>
+              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Wishlist</p>
             </div>
           </div>
         </div>

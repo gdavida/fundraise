@@ -47,7 +47,9 @@
     </a>
     <div id="nav-mobile" class="side-nav fixed">
       <div class="top-wrapper">
-       <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
+        <a href="#about">
+          <img src="<?php the_field('organization_logo') ?>" class="brand-logo">
+        </a>
         <p class="org-title"><?php the_field('name_of_organization') ?></p>
         <br>
         <div class="nav-items">
