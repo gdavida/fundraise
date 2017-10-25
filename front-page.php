@@ -15,21 +15,27 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-	    <div class="container-fluid" id="about">
-        <div class="container">
-        	<?php
-						while ( have_posts() ) : the_post();
-
-							get_template_part( 'template-parts/content', 'page' );
-
-							// If comments are open or we have at least one comment, load up the comment template.
-							if ( comments_open() || get_comments_number() ) :
-								comments_template();
-							endif;
-
-						endwhile; // End of the loop.
-						?>
+		<main id="main" class="site-main frontpage">
+	    <div class="container-fluid">
+        <div class="container hero">
+        	<div class="top">
+	        	<div class="img-wrapper">
+		        	<img src="https://placehold.it/250">
+						</div>
+						<div class=text-wrapper>
+							<h1>You</h1>
+							<h1>work hard for your organization</h1>
+						</div>
+					</div>
+        	<div class="bottom">
+						<h1>You</h1>
+						<ul>
+							<li class="h1">plan events</li>
+							<li class="h1 hidden">attend meetings</li>
+							<li class="h1 hidden">coordinate volunteers</li>
+							<li class="h1 hidden">schedule fundraisers</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</main><!-- #main -->

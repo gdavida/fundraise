@@ -6995,8 +6995,8 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
-  font-size: 2em;
+h1, .h1 {
+  font-size: 2.2em;
   margin: 0.67em 0; }
 
 mark {
@@ -7170,8 +7170,8 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
-  font-size: 2em;
+h1, .h1 {
+  font-size: 2.2em;
   margin: 0.67em 0; }
 
 mark {
@@ -7762,7 +7762,7 @@ nav .nav-wrapper {
   width: 100%; }
 
 .site-main {
-  margin: 0 25% 0 0; }
+  margin: 0 auto 0 auto; }
 
 .site-content .widget-area {
   float: right;
@@ -7810,12 +7810,12 @@ nav .nav-wrapper {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-body {
+div#page {
   display: flex;
   min-height: 100vh;
   flex-direction: column; }
 
-div.content {
+div#content {
   flex: 1 0 auto; }
 
 .sticky {
@@ -7839,6 +7839,9 @@ div.content {
 body.page main.container {
   margin: 0 auto; }
 
+body.page main.frontpage .container {
+  margin: 40px auto; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -7851,6 +7854,33 @@ body.page main.container {
 /*--------------------------------------------------------------
 ## Content Specific Areas
 --------------------------------------------------------------*/
+/*---------------------------
+ - / Frontpage
+--------------------------- */
+main.frontpage .hero .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  main.frontpage .hero .top .text-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px; }
+    main.frontpage .hero .top .text-wrapper h1:first-child {
+      margin-right: 10px; }
+main.frontpage .hero .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%; }
+  main.frontpage .hero .bottom h1:first-child {
+    margin-right: 10px; }
+  main.frontpage .hero .bottom ul {
+    margin: 0; }
+  main.frontpage .hero .bottom li.hidden {
+    display: none; }
+
 /*---------------------------
  - /Org - Title Wrapper
 --------------------------- */

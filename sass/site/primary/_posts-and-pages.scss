@@ -1,11 +1,11 @@
 
-body {
+div#page {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
-div.content {
+div#content {
   flex: 1 0 auto;
 }
       
@@ -37,3 +37,6 @@ body.page {
 		margin: 0 auto;
 	}
 }
+
+body.page main.frontpage .container {
+    margin: 40px auto; }
