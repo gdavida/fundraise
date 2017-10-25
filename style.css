@@ -7839,8 +7839,9 @@ div#content {
 body.page main.container {
   margin: 0 auto; }
 
-body.page main.frontpage .container {
-  margin: 40px auto; }
+body.page main.frontpage .container-fluid {
+  margin: 40px auto;
+  padding: 80px 0; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -7857,6 +7858,7 @@ body.page main.frontpage .container {
 /*---------------------------
  - / Frontpage
 --------------------------- */
+/*     HERO         */
 main.frontpage .hero .top {
   display: flex;
   flex-direction: row;
@@ -7880,6 +7882,14 @@ main.frontpage .hero .bottom {
     margin: 0; }
   main.frontpage .hero .bottom li.hidden {
     display: none; }
+
+/*     BREAKDOWN         */
+.breakdown-section .breakdown-list-wrapper .each-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; }
 
 /*---------------------------
  - /Org - Title Wrapper

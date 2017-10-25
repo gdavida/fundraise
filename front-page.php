@@ -16,8 +16,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main frontpage">
-	    <div class="container-fluid">
-        <div class="container hero">
+
+
+	    <div class="container-fluid hero">
+        <div class="container">
         	<div class="top">
 	        	<div class="img-wrapper">
 		        	<img src="https://placehold.it/250">
@@ -38,6 +40,75 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+
+	    <div class="container-fluid intro-section light-gray-bg">
+        <div class="container">
+						<div class=text-wrapper>
+							<p>Your passion is clear, but how are you connecting with your community’s passions?</p>
+							<p>People want to support you… but not everyone is willing or able to contribute in the same way. People want to support you in their own way, and often in their own time.</p>
+						</div>
+      	</div>
+			</div>
+
+
+
+	    <div class="container-fluid breakdown-section">
+        <div class="container">
+					<div class="top-wrapper">
+						<p>Fundraise.love helps the people who care find how to support you and then follow through. We bridge the gap between inspiration and action by setting you up to be supported in multiple ways.</p>
+					</div>
+					<div class="bottom breakdown-list-wrapper">
+						<div class="each-list-item">
+		        	<div class="img-wrapper">
+			        	<img src="https://placehold.it/50">
+							</div>
+							<div class=text-wrapper>
+								<h3>Event Portal</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+						</div>
+						<div class="each-list-item">
+		        	<div class="img-wrapper">
+			        	<img src="https://placehold.it/50">
+							</div>
+							<div class=text-wrapper>
+								<h3>Swag Store</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+						</div>
+						<div class="each-list-item">
+		        	<div class="img-wrapper">
+			        	<img src="https://placehold.it/50">
+							</div>
+							<div class=text-wrapper>
+								<h3>Volunteer Center</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+						</div>
+						<div class="each-list-item">
+		        	<div class="img-wrapper">
+			        	<img src="https://placehold.it/50">
+							</div>
+							<div class=text-wrapper>
+								<h3>Donation Hub</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+						</div>
+						<div class="each-list-item">
+		        	<div class="img-wrapper">
+			        	<img src="https://placehold.it/50">
+							</div>
+							<div class=text-wrapper>
+								<h3>Idea Box</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							</div>
+						</div>
+					</div>
+      	</div>
+			</div>
+
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

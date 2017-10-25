@@ -20,6 +20,7 @@
 /*---------------------------
  - / Frontpage
 --------------------------- */
+/*     HERO         */
 main.frontpage {
 	.hero {
 		.top {
@@ -54,6 +55,22 @@ main.frontpage {
 		}
 	}
 }
+
+/*     BREAKDOWN         */
+.breakdown-section {
+	.breakdown-list-wrapper {
+		.each-list-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		  align-items: center;
+		  width: 90%;
+		}
+	}
+}
+
+
+
 
 /*---------------------------
  - /Org - Title Wrapper
