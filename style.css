@@ -7891,6 +7891,37 @@ main.frontpage .hero .bottom {
   align-items: center;
   width: 90%; }
 
+/*     CTA-SECTION         */
+.cta-section.container-fluid {
+  padding: 0 0 !important; }
+.cta-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .cta-section .container img {
+    height: auto;
+    max-width: inherit;
+    position: relative;
+    top: 80px; }
+  .cta-section .container .text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .cta-section .container .text-wrapper p {
+      width: 60%;
+      margin-left: auto; }
+
+.cta-button-section.container-fluid {
+  padding: 0 0 !important; }
+.cta-button-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+.cta-button-section a.btn, .cta-button-section a.btn-large {
+  margin-left: auto;
+  margin-right: 50px; }
+
 /*---------------------------
  - /Org - Title Wrapper
 --------------------------- */

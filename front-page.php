@@ -107,6 +107,24 @@ get_header(); ?>
       	</div>
 			</div>
 
+	    <div class="container-fluid light-gray-bg cta-section">
+        <div class="container">
+      		<div class="image-wrapper">
+	        	<img src="https://placehold.it/500x300">
+      		</div>
+					<div class=text-wrapper>
+						<p>Want more information? We’ll email you a publication outlining our services, tools, and pricing.</p>
+					</div>
+				</div>
+			</div>
+
+	    <div class="container-fluid cta-button-section">
+        <div class="container">
+        	<div class="bottom">
+						<a href="#" class="btn primary">Learn More</a>
+					</div>
+      	</div>
+			</div>
 
 
 		</main><!-- #main -->

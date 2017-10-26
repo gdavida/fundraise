@@ -70,6 +70,48 @@ main.frontpage {
 }
 
 
+/*     CTA-SECTION         */
+.cta-section {
+	&.container-fluid {
+		padding: 0 0 !important;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		img {
+	    height: auto;
+    	max-width: inherit;
+    	position: relative;
+    	top: 80px;
+		}
+		.text-wrapper {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+			p {
+				width: 60%;
+				margin-left: auto;
+			}
+		}
+	}
+}
+.cta-button-section {
+	&.container-fluid {
+		padding: 0 0 !important;
+	}
+	.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+	}
+	a.btn {
+    margin-left: auto;
+    margin-right:50px;
+	}
+}
+
 
 
 /*---------------------------
