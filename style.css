@@ -7993,7 +7993,8 @@ div#content {
 body.page main.container {
   margin: 0 auto; }
 
-body.page main.frontpage .container-fluid {
+body.page main.frontpage .container-fluid,
+body.home main.frontpage .container-fluid {
   padding: 80px 0; }
 
 /*--------------------------------------------------------------
