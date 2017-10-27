@@ -18,21 +18,21 @@ get_header(); ?>
 		<main id="main" class="site-main frontpage">
 
 
-	    <div class="container-fluid hero top brown lighten-5">
+	    <div class="container-fluid hero gradient-1-bg">
         <div class="container">
         	<div class="top">
 	        	<div class="img-wrapper">
-		        	<img src="https://placehold.it/250">
+		        	<img src="http://fundraise.dev/wp-content/uploads/2017/10/ex-volunteer.jpg">
 						</div>
 						<div class=text-wrapper>
 							<h1 class=""><span class="swatch-a-text special">You</span>
-							<h1>work hard for your organization</h1>
+							<h1 class="white-text">work hard for your organization</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 
-	    <div class="container-fluid hero bottom brown lighten-5">
+	    <div class="container-fluid hero bottom white">
         <div class="container">
         	<div class="bottom">
 						<h1 class="swatch-a-text special">You</h1>
@@ -47,67 +47,88 @@ get_header(); ?>
 				</div>
 			</div>
 
-	    <div class="container-fluid intro-section">
+	    <div class="container-fluid intro-section brown lighten-5">
         <div class="container">
 						<div class=text-wrapper>
 							<h1><span class="swatch-a-text special">Your</span> passion is clear,<br>
-							but how are you connecting with your community’s passions?</h1>
-							<p>People want to support you… but not everyone is willing or able to contribute in the same way. People want to support you in their own way, and often in their own time.</p>
+							but how are you connecting with your <span class="swatch-a-text">community’s passions</span>?</h1>
+							<p>People want to help you… but not everyone is willing or able to contribute in the same way. People want to support you in their own way, and often in their own time.</p>
 						</div>
       	</div>
 			</div>
 
 
 
-	    <div class="container-fluid  brown lighten-5 breakdown-section">
+	    <div class="container-fluid breakdown-section">
         <div class="container">
-					<div class="top-wrapper">
+					<div class="top-wrapper gradient-2-bg">
 						<p>Fundraise.love helps the people who care find how to support you and then follow through. We bridge the gap between inspiration and action by setting you up to be supported in multiple ways.</p>
 					</div>
-					<div class="bottom breakdown-list-wrapper">
-						<div class="each-list-item">
-		        	<div class="img-wrapper">
-			        	<img src="https://placehold.it/50">
+					<div class="bottom-wrapper">
+						<div class="connector-bar gradient-3-bg">
+						
+						</div>
+						<div class="bottom breakdown-list-wrapper icon">
+							<div class="each-list-item icon">
+			        	<div class="img-wrapper">
+				        	<i class="fa fa-calendar" aria-hidden="true"></i>
+								</div>
 							</div>
-							<div class=text-wrapper>
-								<h3>Event Portal</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="each-list-item">
+			        	<div class="img-wrapper">
+				        	<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="each-list-item">
+			        	<div class="img-wrapper">
+				        	<i class="fa fa-handshake-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="each-list-item">
+			        	<div class="img-wrapper">
+				        	<i class="fa fa-credit-card" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="each-list-item">
+			        	<div class="img-wrapper">
+				        	<i class="fa fa-comments" aria-hidden="true"></i>
+								</div>
 							</div>
 						</div>
-						<div class="each-list-item">
-		        	<div class="img-wrapper">
-			        	<img src="https://placehold.it/50">
+
+
+
+
+						<div class="bottom breakdown-list-wrapper text">
+							<div class="each-list-item">
+								<div class=text-wrapper>
+									<h3>Event Portal</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+								</div>
 							</div>
-							<div class=text-wrapper>
-								<h3>Swag Store</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="each-list-item">
+								<div class=text-wrapper>
+									<h3>Swag Store</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+								</div>
 							</div>
-						</div>
-						<div class="each-list-item">
-		        	<div class="img-wrapper">
-			        	<img src="https://placehold.it/50">
+							<div class="each-list-item">
+								<div class=text-wrapper>
+									<h3>Volunteer Center</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+								</div>
 							</div>
-							<div class=text-wrapper>
-								<h3>Volunteer Center</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="each-list-item">
+								<div class=text-wrapper>
+									<h3>Donation Hub</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+								</div>
 							</div>
-						</div>
-						<div class="each-list-item">
-		        	<div class="img-wrapper">
-			        	<img src="https://placehold.it/50">
-							</div>
-							<div class=text-wrapper>
-								<h3>Donation Hub</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-							</div>
-						</div>
-						<div class="each-list-item">
-		        	<div class="img-wrapper">
-			        	<img src="https://placehold.it/50">
-							</div>
-							<div class=text-wrapper>
-								<h3>Idea Box</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="each-list-item">
+								<div class=text-wrapper>
+									<h3>Idea Box</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -117,10 +138,10 @@ get_header(); ?>
 	    <div class="container-fluid brown lighten-5  brown lighten-5 cta-section">
         <div class="container">
       		<div class="image-wrapper">
-	        	<img src="https://placehold.it/500x300">
+	        	<img src="http://fundraise.dev/wp-content/uploads/2017/10/mockup.png">
       		</div>
 					<div class=text-wrapper>
-						<p class="h4">Want more information? We’ll email you a publication outlining our services, tools, and pricing.</p>
+						<p class="h3">Want more information? We’ll email you a publication outlining our services, tools, and pricing.</p>
 					</div>
 				</div>
 			</div>
@@ -133,21 +154,21 @@ get_header(); ?>
       	</div>
 			</div>
 
-	    <div class="container-fluid more-info-section">
+	    <div class="container-fluid more-info-section gradient-4-bg">
         <div class="container">
-        	<p>We’re working hard behind the scenes to test and finish building out our system. We expect to be live by Spring 2018. Until then…</p>
+        	<p class="top-message">We’re working hard behind the scenes to test and finish building out our system. We expect to be live by Spring 2018. Until then…</p>
         	<div class="list-container">
         		<div class="each-list-item">
-        			<img src="http://placehold.it/100x50">
-        			<p>Get on the waitlist and be among the first to start building your custom site.
+        			<img src="http://fundraise.dev/wp-content/uploads/2017/10/arrow.jpg">
+        			<p class="h3"><a href="http://fundraise.dev/join/"> Get on the waitlist</a> and be among the first to start building your custom site.
       			</div>
 						<div class="each-list-item">
-        			<img src="http://placehold.it/100x50">
-							<p>Explore one of a demo sites.
+        			<img src="http://fundraise.dev/wp-content/uploads/2017/10/arrow.jpg">
+							<p class="h3">Explore one of a <a href="http://fundraise.dev/org/test/">demo sites</a>.
 						</div>
 						<div class="each-list-item">
-        			<img src="http://placehold.it/100x50">
-							<p>View our featured case study.
+        			<img src="http://fundraise.dev/wp-content/uploads/2017/10/arrow.jpg">
+							<p class="h3">View our featured case study.
 						</div>
         	</div>
       	</div>

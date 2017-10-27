@@ -43,6 +43,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
 .primary-bg {
   background-color: #3373b8 !important; }
@@ -98,6 +103,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .dark-gray-text {
   color: #43423f !important; }
 
+.gradient-1-bg {
+  background: linear-gradient(to bottom, #00897b 0%, #423d7a 37%, #423d7a 47%, #c113b5 100%); }
+
+.gradient-2-bg {
+  background: linear-gradient(to bottom, #BF14B4 0%, #BF14B4 70%, #4D1CBC 100%); }
+
+.gradient-3-bg {
+  background: linear-gradient(to bottom, #4D1CBC 0%, #0F9A39 100%); }
+
+.gradient-4-bg {
+  background: linear-gradient(to bottom, #0F9A39 0%, #117A80 40%, #0097a7 100%); }
+
 /* changing colors */
 .swatch-a-bg {
   /* Chrome, Safari, Opera */
@@ -109,7 +126,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   -webkit-animation-direction: alternate;
   -webkit-animation-play-state: running;
   /* Standard syntax */
-  animation-name: colorShift;
+  animation-name: colorBGShift;
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-delay: 1s;
@@ -117,7 +134,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   animation-direction: alternate;
   animation-play-state: running; }
 
-@-webkit-keyframes colorShift {
+@-webkit-keyframes colorBGShift {
   0% {
     background: #5ABCB6;
     left: 0px;
@@ -137,7 +154,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .swatch-a-text {
   color: #5ABCB6;
   /* Chrome, Safari, Opera */
-  -webkit-animation-name: myfirst;
+  -webkit-animation-name: mysecond;
   -webkit-animation-duration: 15s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-delay: 0s;
@@ -145,7 +162,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   -webkit-animation-direction: alternate;
   -webkit-animation-play-state: running;
   /* Standard syntax */
-  animation-name: colorShift;
+  animation-name: colorTextShift;
   animation-duration: 15s;
   animation-timing-function: linear;
   animation-delay: 1s;
@@ -153,7 +170,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   animation-direction: alternate;
   animation-play-state: running; }
 
-@-webkit-keyframes colorShift {
+@-webkit-keyframes colorTextShift {
   0% {
     color: #5ABCB6;
     left: 0px;
@@ -170,6 +187,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
     color: #5ABCB6;
     left: 0px;
     top: 0px; } }
+.swatch-a-border {
+  /* Chrome, Safari, Opera */
+  -webkit-animation-name: mythird;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  /* Standard syntax */
+  animation-name: colorBorderShift;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running; }
+
+@-webkit-keyframes colorBorderShift {
+  0% {
+    border: 10px solid #5ABCB6;
+    left: 0px;
+    top: 0px; }
+  25% {
+    border: 10px solid #C120B7;
+    left: 0px;
+    top: 0px; }
+  50% {
+    border: 10px solid #760E84;
+    left: 0px;
+    top: 0px; }
+  100% {
+    border: 10px solid #5ABCB6;
+    left: 0px;
+    top: 0px; } }
 /* idk what font_code means dg-10.21.17 */
 h1, .h1 {
   font-size: 3rem !important; }
@@ -180,7 +232,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.5rem !important; }
 
-h4, .h4 {
+h4, .h4, p {
   font-size: 1.2rem !important; }
 
 h5, .h5 {
@@ -4916,7 +4968,7 @@ textarea {
 [type="radio"] + label:after {
   content: '';
   position: absolute;
-  left: 0;
+  left: -30px;
   top: 0;
   margin: 4px;
   width: 16px;
@@ -7420,7 +7472,7 @@ p.org-title {
   font-family: 'Permanent Marker', cursive; }
 
 .hero .special {
-  font-size: 5rem; }
+  font-size: 3.4rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -7904,6 +7956,11 @@ nav .nav-wrapper {
   .single-organization footer.page-footer {
     display: none; } }
 
+.home .page-footer {
+  padding-top: 0; }
+  .home .page-footer .row {
+    margin-bottom: 10px; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -7955,62 +8012,65 @@ body.page main.frontpage .container-fluid {
  - / Frontpage
 --------------------------- */
 /*     HERO         */
-main.frontpage .hero.bottom {
-  padding: 0 0 40px !important; }
-main.frontpage .hero .top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  main.frontpage .hero .top .img-wrapper {
-    width: 40%; }
-    main.frontpage .hero .top .img-wrapper img {
-      border: 10px solid #ffffff; }
-  main.frontpage .hero .top .text-wrapper {
+main.frontpage .hero {
+  padding-top: 30px !important; }
+  main.frontpage .hero.bottom {
+    padding: 0 0 40px !important; }
+  main.frontpage .hero .top {
     display: flex;
     flex-direction: row;
-    width: 60%; }
-    main.frontpage .hero .top .text-wrapper h1:first-child {
-      margin-right: 10px; }
-main.frontpage .hero .bottom {
-  visibility: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 60%;
-  margin-left: 40%; }
-  main.frontpage .hero .bottom .rw-words {
-    display: inline;
-    height: 34px; }
-    main.frontpage .hero .bottom .rw-words h1 {
-      margin: 0; }
-  main.frontpage .hero .bottom .rw-words span {
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    color: #6b969d; }
-  main.frontpage .hero .bottom .rw-words-1 span {
-    animation: rotateWordsFirst 18s linear infinite 0s; }
-  main.frontpage .hero .bottom .rw-words-2 span {
-    animation: rotateWordsSecond 18s linear infinite 0s; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(2) {
-    animation-delay: 4s;
-    color: #6b889d; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(3) {
-    animation-delay: 8s;
-    color: #6b739d; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(4) {
-    animation-delay: 12s;
-    color: #7a6b9d; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(5) {
-    animation-delay: 16s;
-    color: #8d6b9d; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(6) {
-    animation-delay: 20s;
-    color: #9b6b9d; }
-  main.frontpage .hero .bottom .rw-words span:nth-child(7) {
-    animation-delay: 24s;
-    color: #9b6b9d; }
+    justify-content: space-between;
+    align-items: center; }
+    main.frontpage .hero .top .img-wrapper {
+      width: 40%; }
+      main.frontpage .hero .top .img-wrapper img {
+        border: 10px solid #ffffff;
+        width: 250px; }
+    main.frontpage .hero .top .text-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 60%; }
+      main.frontpage .hero .top .text-wrapper h1:first-child {
+        margin-right: 10px; }
+  main.frontpage .hero .bottom {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    margin-left: 40%; }
+    main.frontpage .hero .bottom .rw-words {
+      display: inline;
+      height: 34px; }
+      main.frontpage .hero .bottom .rw-words h1 {
+        margin: 0; }
+    main.frontpage .hero .bottom .rw-words span {
+      position: absolute;
+      opacity: 0;
+      overflow: hidden;
+      color: #6b969d; }
+    main.frontpage .hero .bottom .rw-words-1 span {
+      animation: rotateWordsFirst 18s linear infinite 0s; }
+    main.frontpage .hero .bottom .rw-words-2 span {
+      animation: rotateWordsSecond 18s linear infinite 0s; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(2) {
+      animation-delay: 4s;
+      color: #6b889d; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(3) {
+      animation-delay: 8s;
+      color: #6b739d; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(4) {
+      animation-delay: 12s;
+      color: #7a6b9d; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(5) {
+      animation-delay: 16s;
+      color: #8d6b9d; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(6) {
+      animation-delay: 20s;
+      color: #9b6b9d; }
+    main.frontpage .hero .bottom .rw-words span:nth-child(7) {
+      animation-delay: 24s;
+      color: #9b6b9d; }
 @keyframes rotateWordsFirst {
   0% {
     opacity: 1;
@@ -8027,20 +8087,78 @@ main.frontpage .hero .bottom {
     height: 60px; }
   100% {
     opacity: 0; } }
-  main.frontpage .hero .bottom h1:first-child {
-    margin-right: 10px; }
-  main.frontpage .hero .bottom ul {
-    margin: 0; }
-  main.frontpage .hero .bottom li.hidden {
-    display: none; }
+    main.frontpage .hero .bottom h1:first-child {
+      margin-right: 10px; }
+    main.frontpage .hero .bottom ul {
+      margin: 0; }
+    main.frontpage .hero .bottom li.hidden {
+      display: none; }
+
+/*     INTRO SECTION         */
+.intro-section p {
+  font-size: 1.4rem; }
 
 /*     BREAKDOWN         */
-.breakdown-section .breakdown-list-wrapper .each-list-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%; }
+.breakdown-section .top-wrapper {
+  padding: 20px;
+  z-index: 1; }
+  .breakdown-section .top-wrapper p {
+    background-color: white;
+    margin: 0;
+    padding: 40px 20px; }
+.breakdown-section .bottom-wrapper {
+  display: flex; }
+.breakdown-section .connector-bar {
+  width: 20px;
+  position: relative;
+  right: -15%;
+  top: -50px;
+  z-index: -1; }
+.breakdown-section .breakdown-list-wrapper {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px; }
+  .breakdown-section .breakdown-list-wrapper.icon {
+    position: relative;
+    right: -8%; }
+    .breakdown-section .breakdown-list-wrapper.icon .each-list-item {
+      width: 150px;
+      padding: 24px 0; }
+  .breakdown-section .breakdown-list-wrapper .each-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item .img-wrapper i.fa {
+      font-size: 3em;
+      padding: 15px;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item:nth-child(1) i.fa {
+      background-color: #433FA0; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item:nth-child(2) i.fa {
+      background-color: #395488; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item:nth-child(3) i.fa {
+      background-color: #306B70; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item:nth-child(4) i.fa {
+      background-color: #278159; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item:nth-child(5) i.fa {
+      background-color: #1E9741; }
+    .breakdown-section .breakdown-list-wrapper .each-list-item .text-wrapper {
+      width: 80%;
+      margin-left: auto;
+      margin-right: 12%; }
+      .breakdown-section .breakdown-list-wrapper .each-list-item .text-wrapper h3 {
+        margin-bottom: 0; }
+      .breakdown-section .breakdown-list-wrapper .each-list-item .text-wrapper p {
+        margin-top: 5px; }
 
 /*     CTA-SECTION         */
 .cta-section.container-fluid {
@@ -8049,24 +8167,30 @@ main.frontpage .hero .bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .cta-section .container img {
-    height: auto;
-    max-width: inherit;
+  .cta-section .container .image-wrapper {
+    width: 50%;
     position: relative;
-    top: 80px; }
+    left: -50%; }
+  .cta-section .container img {
+    max-width: 770px;
+    position: relative;
+    top: 80px;
+    height: auto; }
   .cta-section .container .text-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: flex-end;
+    margin-left: 80px; }
     .cta-section .container .text-wrapper p {
-      width: 60%;
       margin-left: auto; }
 
 .cta-button-section .container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center; }
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  margin-right: 12%; }
 .cta-button-section a.btn, .cta-button-section a.btn-large {
   margin-left: auto;
   margin-right: 50px;
@@ -8074,17 +8198,31 @@ main.frontpage .hero .bottom {
 
 /*     MORE-INFO-SECTION         */
 .more-info-section {
-  border: 10px solid lightgray;
-  padding: 40px 0 !important;
+  padding: 20px 0 10px 0 !important;
   margin-bottom: 0 !important; }
+  .more-info-section .container {
+    background-color: white;
+    padding: 1% 20%;
+    width: 95%;
+    margin: 10px 2.5%; }
+    .more-info-section .container .top-message {
+      margin-bottom: 5px; }
   .more-info-section .each-list-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px; }
+    .more-info-section .each-list-item a {
+      color: black;
+      font-weight: bold;
+      text-decoration: underline; }
+    .more-info-section .each-list-item img {
+      width: 100px; }
     .more-info-section .each-list-item p {
-      width: 85%; }
+      width: 85%;
+      padding-left: 20px;
+      margin: 10px 0; }
 
 /*---------------------------
  - /Org - Title Wrapper
