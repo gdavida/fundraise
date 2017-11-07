@@ -22,7 +22,7 @@ get_header(); ?>
         <div class="container">
         	<div class="top">
 	        	<div class="img-wrapper">
-		        	<img src="http://fundraise.love/wp-content/uploads/2017/10/ex-volunteer.jpg">
+		        	<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/ex-volunteer.jpg">
 						</div>
 						<div class=text-wrapper>
 							<h1 class=""><span class="black-text special">You</span>
@@ -138,7 +138,7 @@ get_header(); ?>
 	    <div class="container-fluid brown lighten-5  brown lighten-5 cta-section">
         <div class="container">
       		<div class="image-wrapper">
-	        	<img src="http://fundraise.love/wp-content/uploads/2017/10/mockup.png">
+	        	<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/mockup.png">
       		</div>
 					<div class=text-wrapper>
 						<p class="h3">Want more information? We’ll email you a publication outlining our services, tools, and pricing.</p>
@@ -159,15 +159,15 @@ get_header(); ?>
         	<p class="top-message">We’re working hard behind the scenes to test and finish building out our system. We expect to be live by Spring 2018. Until then…</p>
         	<div class="list-container">
         		<div class="each-list-item">
-        			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
+        			<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
         			<p class="h3"><a href="/join/"> Get on the waitlist</a> and be among the first to start building your custom site.
       			</div>
 						<div class="each-list-item">
-        			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
+        			<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
 							<p class="h3">Explore one of a <a href="/org/bridges-myanmar/">demo sites</a>.
 						</div>
 						<div class="each-list-item">
-        			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
+        			<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
 							<p class="h3">View our featured case study.
 						</div>
         	</div>

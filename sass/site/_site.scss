@@ -253,6 +253,20 @@ main.frontpage {
 			}
 		}
 	}
+	@media screen and (max-width: 992px) {
+	.container 
+		.image-wrapper { 
+	    width: 50%;
+	    position: relative;
+	    left: -20%;
+			img {
+		    max-width: 550px;
+		    position: relative;
+		    top: 80px;
+		    height: auto;
+			}
+		}
+	}
 }
 .cta-button-section {
 	&.container-fluid {

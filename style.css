@@ -8179,6 +8179,18 @@ main.frontpage .hero {
     margin-left: 80px; }
     .cta-section .container .text-wrapper p {
       margin-left: auto; }
+@media screen and (max-width: 992px) {
+  .cta-section .container
+  .image-wrapper {
+    width: 50%;
+    position: relative;
+    left: -20%; }
+    .cta-section .container
+    .image-wrapper img {
+      max-width: 550px;
+      position: relative;
+      top: 80px;
+      height: auto; } }
 
 .cta-button-section .container {
   display: flex;
