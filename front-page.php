@@ -25,7 +25,7 @@ get_header(); ?>
 		        	<img src="http://fundraise.love/wp-content/uploads/2017/10/ex-volunteer.jpg">
 						</div>
 						<div class=text-wrapper>
-							<h1 class=""><span class="swatch-a-text special">You</span>
+							<h1 class=""><span class="black-text special">You</span>
 							<h1 class="white-text">work hard for your organization</h1>
 						</div>
 					</div>
@@ -35,7 +35,7 @@ get_header(); ?>
 	    <div class="container-fluid hero bottom white">
         <div class="container">
         	<div class="bottom">
-						<h1 class="swatch-a-text special">You</h1>
+						<h1 class="special black-text">You</h1>
 						<div class="rw-words rw-words-1">
 							<span><h1>plan events</h1></span>
 							<span><h1>attend meetings</h1></span>
@@ -160,11 +160,11 @@ get_header(); ?>
         	<div class="list-container">
         		<div class="each-list-item">
         			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
-        			<p class="h3"><a href="http://fundraise.dev/join/"> Get on the waitlist</a> and be among the first to start building your custom site.
+        			<p class="h3"><a href="/join/"> Get on the waitlist</a> and be among the first to start building your custom site.
       			</div>
 						<div class="each-list-item">
         			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
-							<p class="h3">Explore one of a <a href="http://fundraise.dev/org/test/">demo sites</a>.
+							<p class="h3">Explore one of a <a href="/org/bridges-myanmar/">demo sites</a>.
 						</div>
 						<div class="each-list-item">
         			<img src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
