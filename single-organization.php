@@ -25,7 +25,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">About Us</p>
+              <p class="page-title h2">About Us</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
       <div class="container content-wrapper">
         <div class="row">
           <div class="col s12 m12 l10">
-            <h5>How to get involved: Help in the ways that make sense for you.</h5>
+            <h3>How to get involved: Help in the ways that make sense for you.</h3>
           </div>
         </div>
         <div class='row valign-wrapper'>
@@ -82,7 +82,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Events</p>
+              <p class="page-title h2">Events</p>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Shopping Partners</p>
+              <p class="page-title h2">Shopping Partners</p>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Store</p>
+              <p class="page-title h2">Store</p>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Sponsor</p>
+              <p class="page-title h2">Sponsor</p>
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Wishlist</p>
+              <p class="page-title h2">Wishlist</p>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Share</p>
+              <p class="page-title h2">Share</p>
             </div>
           </div>
         </div>
@@ -269,7 +269,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title">Contact Us</p>
+              <p class="page-title h2">Contact Us</p>
             </div>
           </div>
         </div>
