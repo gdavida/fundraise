@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700");
 .primary-bg {
   background-color: #3373b8 !important; }
 
@@ -5549,7 +5550,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   position: fixed;
-  width: 300px;
+  width: 270px;
   left: 0;
   top: 0;
   margin: 0;
@@ -7447,17 +7448,20 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1, h2, h3, h4, h5, h6, p, li, a {
+  clear: both;
+  font-family: 'Nunito Sans', sans-serif; }
+
+h6 {
+  color: #64676E !important;
+  text-transform: uppercase;
+  font-size: 12px !important; }
 
 .page-title {
   line-height: normal;
-  font-size: 48px;
+  font-size: 30px !important;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000000;
-  padding: 10px 20px;
-  width: fit-content; }
+  color: #b6b6b7; }
 
 .page-subtitle {
   font-size: 30px;
@@ -7765,7 +7769,6 @@ nav .nav-wrapper {
   flex-direction: column;
   justify-content: space-between; }
   #nav-mobile .top-wrapper {
-    padding: 32px 32px 0 32px;
     display: flex;
     align-items: center;
     flex-direction: column; }
@@ -7806,6 +7809,53 @@ nav .nav-wrapper {
   .fixed-announcement i {
     position: relative;
     top: 5px; }
+
+.organization-template-default #nav-mobile {
+  background-color: #191F28; }
+  .organization-template-default #nav-mobile .identification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0; }
+    .organization-template-default #nav-mobile .identification p {
+      color: white !important;
+      font-weight: 400;
+      text-align: center; }
+      .organization-template-default #nav-mobile .identification p:last-child {
+        font-size: 12px !important;
+        margin: 2px 0 0;
+        font-weight: 100;
+        color: #64676E !important; }
+
+.side-item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-top: 1px dotted #464b52a6;
+  border-bottom: 1px dotted #464b52a6;
+  padding-left: 40px; }
+  .side-item-wrapper a {
+    height: fit-content !important;
+    color: #75787E !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%; }
+    .side-item-wrapper a svg {
+      width: 18px;
+      margin-right: 20px;
+      max-height: 20px;
+      fill: #75787E; }
+  .side-item-wrapper.active {
+    background: #aa076b47;
+    /* fallback for old browsers */
+    background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    .side-item-wrapper.active a {
+      color: white !important; }
+      .side-item-wrapper.active a svg {
+        fill: url(#MyGradient); }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -7944,9 +7994,9 @@ nav .nav-wrapper {
   flex: 1 0 auto; }
   @media screen and (min-width: 992px) {
     .single-organization main {
-      padding-left: 300px; } }
+      padding-left: 270px; } }
   .single-organization main .container {
-    width: 80%; }
+    width: 95%; }
 
 @media screen and (min-width: 992px) {
   .single-organization footer.page-footer {
@@ -7956,6 +8006,11 @@ nav .nav-wrapper {
   padding-top: 0; }
   .home .page-footer .row {
     margin-bottom: 10px; }
+
+.nav-footer .goal-wrapper .goal-number {
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 700; }
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -8090,6 +8145,12 @@ main.frontpage .hero {
     main.frontpage .hero .bottom li.hidden {
       display: none; }
 
+.copyright-wrapper p.small {
+  color: #64676E;
+  font-size: 12px !important;
+  text-align: center;
+  margin: 20px 0 0; }
+
 /*     INTRO SECTION         */
 .intro-section p {
   font-size: 1.4rem; }
@@ -8175,8 +8236,9 @@ main.frontpage .hero {
   .cta-section .container .text-wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    margin-left: 80px; }
+    align-items: flex-start;
+    margin-left: 80px;
+    flex-direction: column; }
     .cta-section .container .text-wrapper p {
       margin-left: auto; }
 @media screen and (max-width: 992px) {
@@ -8210,8 +8272,8 @@ main.frontpage .hero {
   margin-bottom: 0 !important; }
   .more-info-section .container {
     background-color: white;
-    padding: 1% 20%;
-    width: 95%;
+    padding: 1% 10%;
+    width: 100%;
     margin: 10px 2.5%; }
     .more-info-section .container .top-message {
       margin-bottom: 5px; }
@@ -8236,16 +8298,17 @@ main.frontpage .hero {
  - /Org - Title Wrapper
 --------------------------- */
 .single-organization .each-section {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 10px 50px; }
 .single-organization .title-wrapper {
   padding: 30px 0 10px 0; }
-.single-organization #about .title-wrapper {
-  background-image: url("images/geo-bg.png");
-  background-size: cover;
-  background-position-y: 50%; }
 .single-organization .content-wrapper {
   margin-top: 20px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  background-color: #ffffff;
+  padding: 20px 50px;
+  border-radius: 8px; }
 
 /*---------------------------
  - /Org - Store
@@ -8344,6 +8407,7 @@ object {
   display: block; }
 
 img.brand-logo {
-  width: 100px; }
+  width: 50px;
+  margin-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */

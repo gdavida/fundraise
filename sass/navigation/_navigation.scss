@@ -41,7 +41,6 @@ nav .nav-wrapper {
   flex-direction: column;
   justify-content: space-between;
 	.top-wrapper {
-		padding: 32px 32px 0 32px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -97,5 +96,62 @@ nav .nav-wrapper {
 	i {
 		position: relative;
 		top: 5px;
+	}
+}
+
+.organization-template-default {
+	#nav-mobile {
+		background-color: #191F28;
+		.identification {
+	    display: flex;
+	    flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+		  width: 100%;
+		  padding: 30px 0;
+	    p {
+	    	color: white !important;
+	    	font-weight: 400;
+	    	text-align: center;
+	    	&:last-child {
+    	    font-size: 12px !important;
+    			margin: 2px 0 0;
+    			font-weight: 100;
+    			color: #64676E !important;
+	    	}
+	    }
+		}
+	}
+}
+
+.side-item-wrapper {
+	display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+	border-top: 1px dotted #464b52a6;
+	border-bottom: 1px dotted #464b52a6;
+	padding-left: 40px;
+  a {
+  	height: fit-content !important;
+  	color: #75787E !important;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 100%;
+  	svg {
+	    width: 18px;
+	    margin-right: 20px;
+	    max-height: 20px;
+  		fill: #75787E;
+  	}
+  }
+  &.active {
+  	background: #aa076b47; /* fallback for old browsers */
+	  background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	  a {
+	  	color: white !important;
+			svg {
+		    fill:url(#MyGradient);
+			}
+	  }
 	}
 }

@@ -25,7 +25,7 @@
   </div><!-- #content -->
 
   
-  <footer class="page-footer" id="colophon" class="site-footer" style="background-color: <?php echo $the_brand_color ?>; ">
+  <footer class="page-footer" id="colophon" class="site-footer">
     <div class="container site-info">
       <div class="row">
         <div class="col l8 s12">
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright" style="background-color: <?php echo $the_brand_color ?>; filter: brightness(85%);">
+    <div class="footer-copyright">
       <div class="container site-info">
         <div class="copyright">
         &copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.

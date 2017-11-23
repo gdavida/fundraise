@@ -25,7 +25,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">About Us</p>
+              <p class="page-title">About Us</p>
             </div>
           </div>
         </div>
@@ -78,11 +78,11 @@
 
 
     <div class="container-fluid each-section events" id="events">
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Events</p>
+              <p class="page-title">Events</p>
             </div>
           </div>
         </div>
@@ -99,11 +99,11 @@
     </div>
 
     <div class="container-fluid each-section shopping-partners" id="shopping-partners">
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Shopping Partners</p>
+              <p class="page-title">Shopping Partners</p>
             </div>
           </div>
         </div>
@@ -147,11 +147,11 @@
     </div>
 
     <div class="container-fluid each-section store" id="store"> 
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Store</p>
+              <p class="page-title">Store</p>
             </div>
           </div>
         </div>
@@ -195,11 +195,11 @@
       </div>
     </div>
     <div class="container-fluid each-section sponsor" id="sponsor"> 
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Sponsor</p>
+              <p class="page-title">Sponsor</p>
             </div>
           </div>
         </div>
@@ -214,12 +214,14 @@
         </div>
       </div>
     </div>
+
+
     <div class="container-fluid each-section wishlist" id="wishlist">    
-      <div class="title-wrapper" style="background-color: <?php echo $the_brand_color; ?>">
+      <div class="title-wrapper">
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title" style="border: 2px solid <?php echo $the_brand_color ?>">Wishlist</p>
+              <p class="page-title">Wishlist</p>
             </div>
           </div>
         </div>
@@ -234,6 +236,57 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="container-fluid each-section wishlist" id="share">    
+      <div class="title-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l10">
+              <p class="page-title">Share</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content-wrapper">
+        <div class="row">
+          <div class="col s12 m12 l10">
+            <div id="structure" class="section scrollspy">
+              <p class="caption"><?php the_field('share_custom_message') ?></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+    <div class="container-fluid each-section wishlist" id="contact">    
+      <div class="title-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l10">
+              <p class="page-title">Contact Us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content-wrapper">
+        <div class="row">
+          <div class="col s12 m12 l10">
+            <div id="structure" class="section scrollspy">
+              <p class="caption"><?php the_field('contact_custom_message') ?></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
 
 

@@ -3,10 +3,10 @@
   main {
     flex: 1 0 auto; 
     @media screen and (min-width: 992px) {
-  	  padding-left: 300px;
+  	  padding-left: 270px;
     }
     .container {
-      width: 80%;
+      width: 95%;
 
   	}
   }
@@ -24,5 +24,15 @@
   padding-top: 0;
   .row {
     margin-bottom: 10px;
+  }
+}
+
+.nav-footer {
+  .goal-wrapper {
+    .goal-number {
+      text-transform: none !important;
+      font-size: 14px !important;
+      font-weight: 700;
+    }
   }
 }

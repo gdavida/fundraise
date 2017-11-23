@@ -142,21 +142,16 @@ get_header(); ?>
       		</div>
 					<div class=text-wrapper>
 						<p class="h3">Want more information? We’ll email you a publication outlining our services, tools, and pricing.</p>
+	        	<div class="bottom">
+							<a href="#" class="btn primary white black-text special">Learn More</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-	    <div class="container-fluid cta-button-section">
-        <div class="container">
-        	<div class="bottom">
-						<a href="#" class="btn primary white black-text special">Learn More</a>
-					</div>
-      	</div>
-			</div>
-
 	    <div class="container-fluid more-info-section gradient-4-bg">
         <div class="container">
-        	<p class="top-message">We’re working hard behind the scenes to test and finish building out our system. We expect to be live by Spring 2018. Until then…</p>
+        	<p class="top-message h2">We’re working hard behind the scenes to test and finish building out our system. We expect to be live by Spring 2018. Until then…</p>
         	<div class="list-container">
         		<div class="each-list-item">
         			<img class="responsive-img" src="http://fundraise.love/wp-content/uploads/2017/10/arrow.jpg">
