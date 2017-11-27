@@ -257,8 +257,11 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="single-fact text-center">
-                            <h2>Want to see Fundraise in action?</h2>
-                            <h4>Our features sound great, the process sounds straighforward, but what is Fundraise <em>really</em> like? Context is key. Check out our <a href="http://bestdayalways.today/org/test">demo page</a> to see the big picture for yourself.</h4>
+                            <h2 style="color: #2b323f;">Want to see Fundraise in action?</h2>
+                            <h4 style="color: #2b323f">Our features sound great, the process sounds straighforward, but what is Fundraise <em>really</em> like? Context is key. See for yourself.</h4>
+                     
+
+                              <button href="http://bestdayalways.today/org/test" class="btn" style="background: #2b323f; margin-top: 40px;">VIEW OUR DEMO PAGE</button>
                         </div>
                     </div>
                 </div>
