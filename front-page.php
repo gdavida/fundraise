@@ -83,8 +83,9 @@
             </div>
         </section>
         <!-- app features area end -->
-          <!-- fun fact area start -->
-        <section id="fun-fact-area" class="overlay-grad-two ptb-120" style="padding-top:90px; padding-bottom: 90px;">
+        
+        <!-- cta 1 start -->
+        <section id="cta-1" class="overlay-grad-two ptb-120" style="padding-top:90px; padding-bottom: 90px;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -96,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <!-- fun fact area end -->
+        <!-- cta 1 end -->
 
         <!-- awesome feature area start -->
         <section id="awesome-features-area" class="overlay-white ptb-120">
