@@ -20,52 +20,40 @@
 <?php get_header('org'); ?>
 
     <main>
+
+
     <div class="container-fluid each-section about how-to-give" id="about">
-      <div class="title-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l10">
-              <p class="page-title h2">About Us</p>
-            </div>
+      <div class="container">
+        <div class="row ">
+          <div class="card content-wrapper text-wrapper">
+            <p class="page-title h2">About Us</p>
+            <h3>How to get involved:<br>Help in the ways that make sense for you.</h3>
+            <p>Whether you are attending a community event, volunteering at fundraisers, helping to organizing events, or contributing your thoughts and ideas and talents in other ways, giving your time to <?php the_field('name_of_organization'); ?> is an invaluable way to support our community.</p>
+          </div>
+          <div class="card content-wrapper image-wrapper" style="background-image: url('<?php the_field('organization_feature_image');?>')">
           </div>
         </div>
       </div>
-      <div class="container content-wrapper">
-        <div class="row">
-          <div class="col s12 m12 l10">
-            <h3>How to get involved: Help in the ways that make sense for you.</h3>
-          </div>
-        </div>
-        <div class='row valign-wrapper'>
-          <div class="col sm12 m4 center">
-            <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">access_time</i>
-            <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Share your time</h5>
-          </div>
-          <div class="col sm12 m12 l10">
+      <div class="container ">
+        <div class='row'>
+          <div class="content-wrapper col card third">
+            <i class="material-icons small" style="background: 
+                        linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">access_time</i>
+            <h4 style="text-shadow: none;">Share your time</h4>
             <p class="text-left">
-              Whether you are attending a community event, volunteering at fundraisers, helping to organizing events, or contributing your thoughts and ideas and talents in other ways, giving your time to <?php the_field('name_of_organization'); ?> is an invaluable way to support our community. 
+              Your thoughts and ideas and talents in other ways, giving your time to <?php the_field('name_of_organization'); ?> is an invaluable way to support our community. 
             </p>
           </div>
-        </div>
-        <div class='row valign-wrapper'>
-          <div class="col sm12 m8">
-            <p class="text-left">
-              Donate to our general fund, because sometimes the best way to help someone is to give them some cash without any strings attached. We have this fund to make sure that we have the freedom to see a need and meet it.<br>
-              Choose a specific sponsorship to direct where you want your money being used.
-            </p>
+          <div class=" content-wrapper col card third">
+            <i class="material-icons small" style="background:linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">credit_card</i>
+            <h4 style="text-shadow: none;">Donate money</h4>
+            <p class="">
+              We have this fund to make sure that we have the freedom to see a need and meet it.<br>Choose a specific sponsorship.</p>
           </div>
-          <div class="col sm12 m4 center ">
-            <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">credit_card</i>
-            <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Donate money</h5>
-          </div>
-        </div>
-        <div class='row valign-wrapper'>
-            <div class="col sm12 m4 center">
-              <i class="material-icons medium" style="color: <?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">shopping_basket</i>
-              <h5 style="color:<?php echo $the_brand_color ?>; text-shadow: 2px 1px #eaeaea;">Provide supples</h5>
-            </div>
-            <div class="col sm12 m8">
-              <p class="text-left">
+            <div class=" content-wrapper col card third">
+              <i class="material-icons small" style="background:linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">shopping_basket</i>
+              <h4 style="text-shadow: none;">Provide supples</h4>
+              <p class="">
                 Find out what specific items we need donated and fulfill through Amazon Wishlist.
               </p>
             </div>
@@ -79,17 +67,17 @@
 
     <div class="container-fluid each-section events" id="events">
       <div class="title-wrapper">
-        <div class="container">
+        <div class="container content-wrapper">
           <div class="row">
-            <div class="col s12 m12 l10">
-              <p class="page-title h2">Events</p>
+            <div class="col">
+              <h1>Events</h1>
             </div>
           </div>
         </div>
       </div>
       <div class="container content-wrapper">
         <div class="row">
-          <div class="col s12 m12 l10">
+          <div class="col">
             <article id="events" class="shown" style="margin-top:30px">
               <?php the_field('google_calendar_iframe'); ?>
             </article>
@@ -100,10 +88,11 @@
 
     <div class="container-fluid each-section shopping-partners" id="shopping-partners">
       <div class="title-wrapper">
-        <div class="container">
+        <div class="container content-wrapper">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title h2">Shopping Partners</p>
+              <h1 class="page-title h2">Shopping Partners</h1>
+              <h3>Maybe this describes business/community partners and volunteer.</h3>
             </div>
           </div>
         </div>
@@ -112,8 +101,7 @@
         <div class="row">
           <div class="col s12 m12 l10">
             <article id="shopping-partners" class="collapse">
-              <p><span>These online stores donate money back!</span></p>
-              <p>Follow these links before shopping at these online retailers for a percentage of sales to be returned to <?php the_field('name_of_organization') ?>.</p>
+              <p><?php the_field('shopping_partners_custom_message'); ?></p>
               <p><a href="<?php the_field('amazon_link'); ?>" target="_blank">Amazon</a></p>
               <p><a href="<?php the_field('walmart_link'); ?>" target="_blank">Walmart</a></p>
               <p><a href="<?php the_field('target_link'); ?>" target="_blank">Target</a></p>
@@ -151,17 +139,19 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title h2">Store</p>
+              <h1 class="page-title h2">Store</h1>
+              <h3>Share your <?php the_field('name_of_organization'); ?> pride!</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="container content-wrapper">
+      <div class="container ">
         <div class="row">
-          <div class="col s12 m12 l10">
-            <p>Share your <?php the_field('name_of_organization'); ?> pride!</p>
+          <div class="col content-wrapper">
             <p>Purchase <?php the_field('name_of_organization'); ?> branded apparel and 20% of sales go directly to <?php the_field('name_of_organization'); ?>. We have adult and children sizes of shirts, hoodies, hats, and socks, and they're shipped directly to your home.</p>
-          
+          </div>
+        </div>
+        <div class="row">
               <!-- 
                 If there are rows of the Store Items repeater, then
                 For each, do this:
@@ -170,13 +160,14 @@
                 <?php if( have_rows('store_items') ) { ?>    
                   <div class="apparel-images-wrapper">
                   <?php while( have_rows('store_items') ): the_row(); ?>
-                    <div class="card">
+                    <div class="card content-wrapper">
                       <div class="card-image">
                         <img src="<?php the_sub_field('image') ?>" />
-                        <a class="btn-floating halfway-fab waves-effect" style="background-color: <?php echo $the_brand_color; ?>; filter: brightness(80%);"><i class="material-icons black-text">add</i></a>
+                        <a class="btn-floating halfway-fab waves-effect" style="background: 
+                        linear-gradient(to top left, #8748FA, #E88EB3); border: 1px solid #F9FAFA;"><i class="material-icons white-text" style="font-size: 1.2rem; line-height: 39px; font-weight: 100; margin-left: -.5px;">add</i></a>
                       </div>
                       <div class="card-content">
-                        <span class="card-title"><?php the_sub_field('name') ?></span>
+                        <p class="h4"><?php the_sub_field('name') ?></p>
                       </div>
                     </div>
                   <?php endwhile; ?>
@@ -186,11 +177,6 @@
                   // no rows found
                 <?php  } ?>
                 
-              <!-- 
-                / end of Store Items each
-               -->
-
-          </div>
         </div>
       </div>
     </div>
@@ -199,7 +185,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12 l10">
-              <p class="page-title h2">Sponsor</p>
+              <p class="page-title h2">Donate</p>
             </div>
           </div>
         </div>
@@ -214,7 +200,7 @@
         </div>
       </div>
     </div>
-
+<!-- 
 
     <div class="container-fluid each-section wishlist" id="wishlist">    
       <div class="title-wrapper">
@@ -261,7 +247,7 @@
     </div>
 
 
-    
+     -->
 
 
     <div class="container-fluid each-section wishlist" id="contact">    

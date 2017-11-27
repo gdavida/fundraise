@@ -60,7 +60,6 @@ nav .nav-wrapper {
 			height: 40px;
 	    justify-content: flex-start;
 	    display: flex;
-	    padding-left: 0;
 	    color: black;
 		}
 		p a {
@@ -101,7 +100,7 @@ nav .nav-wrapper {
 
 .organization-template-default {
 	#nav-mobile {
-		background-color: #191F28;
+		background-color: #282E3A;
 		.identification {
 	    display: flex;
 	    flex-direction: column;
@@ -126,17 +125,18 @@ nav .nav-wrapper {
 
 .side-item-wrapper {
 	display: flex;
+	flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
 	border-top: 1px dotted #464b52a6;
 	border-bottom: 1px dotted #464b52a6;
-	padding-left: 40px;
   a {
   	height: fit-content !important;
   	color: #75787E !important;
 		padding-top: 15px;
 		padding-bottom: 15px;
 		width: 100%;
+		padding-left: 40px;
   	svg {
 	    width: 18px;
 	    margin-right: 20px;
@@ -144,14 +144,22 @@ nav .nav-wrapper {
   		fill: #75787E;
   	}
   }
+  ul {
+    padding-left: 40px;
+    width: 100%;
+    display: none;
+  }
   &.active {
-  	background: #aa076b47; /* fallback for old browsers */
-	  background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	  a {
+  	  a {
+			background: #aa076b47; /* fallback for old browsers */
+			background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	  	color: white !important;
 			svg {
 		    fill:url(#MyGradient);
 			}
+	  }
+	  ul {
+	  	display: block;
 	  }
 	}
 }

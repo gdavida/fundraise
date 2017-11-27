@@ -57,7 +57,7 @@
         
         <div class="nav-items">
           <div class="side-item-wrapper active orgnavBtn">
-            <a href="#about" class="">
+            <a href="#about" class="title">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 18 20" style="enable-background:new 0 0 18 20;" xml:space="preserve">
 
@@ -76,10 +76,10 @@
               </g>
             </g>
             </svg>
-            About</a>
+            Home</a>
           </div>
           <div class="side-item-wrapper orgnavBtn">
-            <a href="#events" class="">
+            <a href="#events" class="title">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 24 22" style="enable-background:new 0 0 24 22;" xml:space="preserve">
               <title>Wishlist_1</title>
@@ -98,6 +98,31 @@
               Events
             </a>
           </div>
+
+
+          <div class="side-item-wrapper orgnavBtn">
+          <a href="#sponsor" class="title">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 24 23.8" style="enable-background:new 0 0 24 23.8;" xml:space="preserve">
+          <title>Sponsor</title>
+          <g id="Layer_2">
+            <g id="Isolation_Mode">
+              <path d="M22.5,2.8H17c0.4-1,0-2.2-1-2.6c-0.8-0.3-1.7-0.2-2.3,0.5L12,2.3l-1.7-1.7c-0.8-0.8-2-0.8-2.8-0.1C6.8,1.1,6.7,2,7,2.8
+                H1.5C0.7,2.8,0,3.4,0,4.3l0,0v2c0,0.8,0.7,1.5,1.5,1.5h21c0.8,0,1.5-0.7,1.5-1.5v-2C24,3.4,23.3,2.8,22.5,2.8L22.5,2.8z"/>
+              <path d="M3.4,23.8H11v-14H3.4c-0.8,0-1.5,0.6-1.5,1.4c-0.2,3.7-0.2,7.5,0,11.2C2,23.1,2.6,23.8,3.4,23.8z"/>
+              <path d="M13,9.8v14h7.6c0.8,0,1.5-0.6,1.5-1.4c0.2-3.7,0.2-7.5,0-11.2c0-0.8-0.7-1.4-1.5-1.4H13z"/>
+            </g>
+          </g>
+          </svg>
+            Donate</a>
+            <ul>
+              <li>Featured Campaign</li>
+              <li>Sponsorships</li>
+              <li>Shopping Partners</li>
+              <li>Wishlist</li>
+            </ul>
+          </div>
+
           <div class="side-item-wrapper orgnavBtn">
             <a href="#shopping-partners" class="">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -107,12 +132,12 @@
               c-1.2,0.5-2.3,1.4-3.2,2.6c-0.9-1.2-2-2.1-3.2-2.6c1.4-0.8,2.3-2.2,2.3-3.9C11.8,4,9.8,2,7.3,2S2.7,4,2.7,6.5c0,1.7,0.9,3.1,2.3,3.9
               c-2.5,1-4.5,3.7-5,7.3c-0.1,1,0.3,2,0.8,2C4.7,20,8.6,20,12.5,19.8c4,0.2,8,0.2,12,0C25.1,19.7,25.5,18.7,25.4,17.7z"/>
             </svg>
-              Partners</a>
+              Connect</a>
           </div>
 
 
           <div class="side-item-wrapper orgnavBtn">
-            <a href="#store" class="">
+            <a href="#store" class="title">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 21 21" style="enable-background:new 0 0 21 21;" xml:space="preserve">
               <title>Store</title>
@@ -126,73 +151,6 @@
               </g>
               </svg>
             Store</a>
-          </div>
-
-
-
-
-          <div class="side-item-wrapper orgnavBtn">
-          <a href="#sponsor" class="">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 24 23.8" style="enable-background:new 0 0 24 23.8;" xml:space="preserve">
-          <title>Sponsor</title>
-          <g id="Layer_2">
-            <g id="Isolation_Mode">
-              <path d="M22.5,2.8H17c0.4-1,0-2.2-1-2.6c-0.8-0.3-1.7-0.2-2.3,0.5L12,2.3l-1.7-1.7c-0.8-0.8-2-0.8-2.8-0.1C6.8,1.1,6.7,2,7,2.8
-                H1.5C0.7,2.8,0,3.4,0,4.3l0,0v2c0,0.8,0.7,1.5,1.5,1.5h21c0.8,0,1.5-0.7,1.5-1.5v-2C24,3.4,23.3,2.8,22.5,2.8L22.5,2.8z"/>
-              <path d="M3.4,23.8H11v-14H3.4c-0.8,0-1.5,0.6-1.5,1.4c-0.2,3.7-0.2,7.5,0,11.2C2,23.1,2.6,23.8,3.4,23.8z"/>
-              <path d="M13,9.8v14h7.6c0.8,0,1.5-0.6,1.5-1.4c0.2-3.7,0.2-7.5,0-11.2c0-0.8-0.7-1.4-1.5-1.4H13z"/>
-            </g>
-          </g>
-          </svg>
-            Sponsor</a>
-          </div>
-          <div class="side-item-wrapper orgnavBtn">
-            <a href="#wishlist" class="">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 22" style="enable-background:new 0 0 23 22;" xml:space="preserve">
-            <title>Wishlist</title>
-            <g id="Layer_2">
-              <g id="Isolation_Mode">
-                <path d="M12.9,0.9l2.7,5.5l6.1,0.9C22.5,7.4,23.1,8.1,23,9c0,0.3-0.2,0.7-0.5,0.9l-4.4,4.3l1,6.1c0.1,0.8-0.5,1.6-1.3,1.7
-                  c-0.3,0-0.6,0-0.8-0.1L11.5,19L6,21.8c-0.7,0.4-1.7,0.1-2.1-0.6c-0.2-0.3-0.2-0.6-0.2-1l1-6.1L0.5,9.9c-0.6-0.6-0.6-1.5,0-2.1
-                  C0.7,7.5,1,7.3,1.3,7.3l6.1-0.9l2.7-5.5c0.4-0.8,1.3-1.1,2.1-0.7C12.5,0.3,12.7,0.6,12.9,0.9z"/>
-              </g>
-            </g>
-            </svg>
-            Wishlist</a>
-          </div>
-
-          <div class="side-item-wrapper orgnavBtn">
-            <a href="#share" class="">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 24 20" style="enable-background:new 0 0 24 20;" xml:space="preserve">
-              <title>Share</title>
-              <g id="Layer_2">
-                <g id="Isolation_Mode">
-                  <path d="M21.5,1.2c-1.8-1.3-4.1-1.6-6.1-0.9c-1.4,0.5-2.6,1.4-3.3,2.7c-0.7-1.3-1.9-2.3-3.3-2.7C6.6-0.4,4.3,0,2.5,1.3
-                    c-2.8,2-3.4,5.9-1.3,8.7c0.2,0.3,0.4,0.5,0.7,0.8l9,8.8c0.6,0.6,1.6,0.6,2.2,0l9-8.8c2.5-2.4,2.6-6.3,0.2-8.8
-                    C22,1.7,21.7,1.5,21.5,1.2z"/>
-                </g>
-              </g>
-              </svg>Share</a>
-          </div>
-
-
-          <div class="side-item-wrapper orgnavBtn">
-            <a href="#contact" class="">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 23 21" style="enable-background:new 0 0 23 21;" xml:space="preserve">
-              <title>Contact</title>
-              <g id="Layer_2">
-                <g id="Isolation_Mode">
-                  <path d="M0.1,19.5c-0.2-5.9-0.1-12,0-17.9c0-0.8,0.7-1.4,1.5-1.5c6.7-0.3,13-0.3,19.7,0c0.8,0,1.4,0.6,1.5,1.4
-                    c0.2,4.8,0.2,9.7,0,14.4c0,0.8-0.7,1.4-1.4,1.4c-4.8,0.3-9.6,0.2-14.4-0.1l-4.5,3.3c-0.7,0.5-1.6,0.3-2.1-0.3
-                    C0.3,20.1,0.2,19.8,0.1,19.5z"/>
-                </g>
-              </g>
-              </svg>
-
-            Contact Us</a>
           </div>
 
 
