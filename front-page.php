@@ -83,7 +83,7 @@
             </div>
         </section>
         <!-- app features area end -->
-        
+
         <!-- cta 1 start -->
         <section id="cta-1" class="overlay-grad-two ptb-120" style="padding-top:90px; padding-bottom: 90px;">
             <div class="container">
@@ -251,22 +251,20 @@
         </section>
         <!-- how it work area end -->
 
-        <!-- promo video area start -->
-<!--         <div id="promo-video-area">
+        <!-- cta 2 start -->
+        <section id="cta-2" class="overlay-grad-two ptb-120" style="padding-top:90px; padding-bottom: 90px;">
             <div class="container">
-                <div class="video-demo-image wow fadeIn" data-wow-duration="2s">
-                    <div class="overlay-grad-two">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/others/video-demo.jpg" alt="" class="img-responsive center-block">
-                    </div>
-                    <div class="video-play-icon">
-                        <a href="http://www.youtube.com/watch?v=k-R6AFn9-ek"><i class="icofont icofont-ui-play"></i></a>
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="single-fact text-center">
+                            <h2>Want to see Fundraise in action?</h2>
+                            <h4>Our features sound great, the process sounds straighforward, but what is Fundraise <em>really</em> like? Context is key. Check out our <a href="http://bestdayalways.today/org/test">demo page</a> to see the big picture for yourself.</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- promo video area end -->
-
-      
+        </section>
+        <!-- cta 2 end -->
 
         <!-- app screenshot area start -->
         <section id="app-screenshot-area" class="home-style-2 ptb-120">
