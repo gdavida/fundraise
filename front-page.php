@@ -9,8 +9,8 @@
                         <div class="promo-header-area text-center">
                             <h2 class="animated fadeInDown wow" data-wow-delay="1s">Built for </h2>
                             <h1 class="animated fadeInDown wow" data-wow-delay="1.5s">Passionate People</h1>
-                            <p class="animated fadeInDown wow" data-wow-delay="2.5s">Tap into the public's passions and build a better organization.</p>
-                            <a href="#get-started" class="btn btn-style-2 animated fadeInDown wow" data-wow-delay="4.5s">Get Started</a>
+                            <p class="animated fadeIn wow" data-wow-delay="2s">Tap into the public's passions and build a better organization.</p>
+                            <a href="#get-started" class="btn btn-style-2 animated fadeIn wow" data-wow-delay="3s">Get Started</a>
                             <!-- Swiper -->
                             <div class="swiper-container one animated fadeInUp wow" data-wow-delay="2s">
                                 <div class="swiper-wrapper">
@@ -261,7 +261,7 @@
                             <h4 style="color: #2b323f">Our features sound great, the process sounds straighforward, but what is Fundraise <em>really</em> like? Context is key. See for yourself.</h4>
                      
 
-                              <button href="http://bestdayalways.today/org/test" class="btn" style="background: #2b323f; margin-top: 40px;">VIEW OUR DEMO PAGE</button>
+                              <a href="http://bestdayalways.today/org/test" class="btn" style="background: #2b323f; margin-top: 40px;">VIEW OUR DEMO PAGE</a>
                         </div>
                     </div>
                 </div>
