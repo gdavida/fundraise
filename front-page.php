@@ -252,7 +252,7 @@
         <!-- how it work area end -->
 
         <!-- cta 2 start -->
-        <section id="cta-2" class="overlay-grad-two ptb-120" style="padding-top:90px; padding-bottom: 90px;">
+        <section id="cta-2" class="overlay-grad-one ptb-120" style="padding-top:90px; padding-bottom: 90px;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
