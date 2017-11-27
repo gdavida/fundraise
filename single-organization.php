@@ -38,20 +38,20 @@
         <div class='row'>
           <div class="content-wrapper col card third">
             <i class="material-icons small" style="background: 
-                        linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">access_time</i>
+                        linear-gradient(to bottom left, #8748FA, #E88EB3); color: white; text-shadow: none;">access_time</i>
             <h4 style="text-shadow: none;">Share your time</h4>
             <p class="text-left">
               Your thoughts and ideas and talents in other ways, giving your time to <?php the_field('name_of_organization'); ?> is an invaluable way to support our community. 
             </p>
           </div>
           <div class=" content-wrapper col card third">
-            <i class="material-icons small" style="background:linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">credit_card</i>
+            <i class="material-icons small" style="background:linear-gradient(to bottom left, #8748FA, #E88EB3); color: white; text-shadow: none;">credit_card</i>
             <h4 style="text-shadow: none;">Donate money</h4>
             <p class="">
               We have this fund to make sure that we have the freedom to see a need and meet it.<br>Choose a specific sponsorship.</p>
           </div>
             <div class=" content-wrapper col card third">
-              <i class="material-icons small" style="background:linear-gradient(to bottome left, #8748FA, #E88EB3); color: white; text-shadow: none;">shopping_basket</i>
+              <i class="material-icons small" style="background:linear-gradient(to bottom left, #8748FA, #E88EB3); color: white; text-shadow: none;">shopping_basket</i>
               <h4 style="text-shadow: none;">Provide supples</h4>
               <p class="">
                 Find out what specific items we need donated and fulfill through Amazon Wishlist.

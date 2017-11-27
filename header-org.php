@@ -179,7 +179,7 @@
           <div class="text-wrapper">
            
             <div class="">
-             <p class="small">&copy; <?php echo date('Y'); ?> Fundraise, All rights reserved.</p>
+             <p class="small">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url() ?>">Fundraise</a>, All rights reserved.</p>
             </div>
           </div>
         </div>

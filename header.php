@@ -60,7 +60,7 @@
 <!--                             <li><a href="#app-about-area">About</a></li>-->                            
                             <li><a href="#awesome-features-area">Features</a></li>
                             <li><a href="#how-it-works-area">How It Works</a></li>
-                            <li><a href="#app-screenshot-area">Screenshots</a></li>
+                            <li><a href="#cta-2">Demo</a></li>
                             <!-- <li><a href="#pricing-table-area">Pricing</a></li> -->
                             <!-- <li><a href="#faq-area">FAQs</a></li> -->
                             <!-- <li><a href="#blog-area">Blog</a></li> -->

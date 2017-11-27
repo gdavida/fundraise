@@ -90,8 +90,8 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="single-fact text-center">
-                            <h2>At its heart, Fundraise is a dashboard and community hub.</h2>
-                            <h4>You get summaries, pertenant stats, and the bigger context all in one place. So what does this mean for your users? And how does this help you?</h4>
+                            <h2>At its heart, Fundraise is a community hub.</h2>
+                            <h4>Our dashboard gives users summaries, pertenant stats, and connects users and organizers and the bigger context all in one place. So what does this mean for your users? And how does this help you?</h4>
                         </div>
                     </div>
                 </div>
@@ -258,7 +258,7 @@
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="single-fact text-center">
                             <h2 style="color: #2b323f;">Want to see Fundraise in action?</h2>
-                            <h4 style="color: #2b323f">Our features sound great, the process sounds straighforward, but what is Fundraise <em>really</em> like? Context is key. See for yourself.</h4>
+                            <h4 style="color: #2b323f">Sweet features, smooth process, sounds good... but what is Fundraise <em>really</em> like? Context is key. See for yourself.</h4>
                      
 
                               <a href="http://bestdayalways.today/org/test" class="btn" style="background: #2b323f; margin-top: 40px;">VIEW OUR DEMO PAGE</a>
