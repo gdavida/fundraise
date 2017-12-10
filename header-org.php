@@ -26,7 +26,7 @@
 
 <!doctype html>
 <html <?php language_attributes(); ?>>
-<head>
+<head><script src="https://ajax.googleapis.com/ajax/libs/indefinite-observable/1.0.1/indefinite-observable.js"></script>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -116,15 +116,15 @@
           </svg>
             Donate</a>
             <ul>
-              <li>Featured Campaign</li>
-              <li>Sponsorships</li>
-              <li>Shopping Partners</li>
-              <li>Wishlist</li>
+              <li><a href="#featured-campaign">Featured Campaign</a></li>
+              <li><a href="#shopping-partners">Shopping Partners</a></li>
+              <li><a href="#sponsor">Sponsorships</a></li>
+              <li><a href="#wishlist">Wishlist</a></li>
             </ul>
           </div>
 
           <div class="side-item-wrapper orgnavBtn">
-            <a href="#shopping-partners" class="">
+            <a href="#connect" class="">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 25.4 20" style="enable-background:new 0 0 25.4 20;" xml:space="preserve">
             <title>Partners</title>
@@ -159,31 +159,53 @@
         </div>
         
       </div>
-      <div class="nav-footer">
-        <div class="goal-wrapper" >
-          <div class="text-wrapper">
-            <h6 class="">Goal</h6>
-            <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
-            <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0; border-radius: 5px;">
-              <div style="width:50%; background-color: gray; height: 100%; border-radius: 5px; background: #aa076b47; background: linear-gradient(to left, #4ccbab, #3e75c8); /* W3C, IE 10+/ Edge, "></div>
+        
+        <div class="nav-footer" style="
+          background-color: #222732;
+      ">
+              <div class="goal-wrapper"><h3 style="
+          background-color: #222732;
+          color: #858992 !important;
+          padding: 15px 0 12px;
+          margin: 0px 0 5px;
+          text-align: center;
+          border-bottom: 1px dotted #434c5f;
+          border-top: 1px dotted #434c5f;
+          text-transform: none;
+      ">Fundraising Goal</h3>
+                <div class="text-wrapper">
+                  
+                  <!-- TO DO: eventually this needs to have a bar with the percentage to goal illustrated -->
+                  <div id="progress-tracker" style="height: 10px; border: 1px solid black; margin-bottom: 0; border-radius: 5px;">
+                    <div style="width:50%; background-color: gray; height: 100%; border-radius: 5px; background: #aa076b47; background: linear-gradient(to left, #4ccbab, #3e75c8); /* W3C, IE 10+/ Edge, "></div>
+                  </div>
+                    <h6 class="goal-number">$23,000 / $40,000</h6><a class="btn white-bg" href="#" style="
+          border: 1px solid #5f5f5f;
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #282E3A;
+    padding-bottom: 35px;
+      ">DONATE</a>
+                </div>
+              </div>
+              <div class="copyright-wrapper" style="
+          /* display: none; */
+      ">
+                <div class="text-wrapper">
+                 
+                  <div class="">
+                   <p class="small" style="
+          display: none;
+      ">© 2017 <a href="http://bestdayalways.today">Fundraise</a>, All rights reserved.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h6 class="goal-number">$<?php 
-              $num = get_field('dollar_goal');
-              $num = (int)$num;
-              $num = number_format($num);
-              echo $num;
-            ?></h6>
-          </div>
-        </div>
-        <div class="copyright-wrapper">
-          <div class="text-wrapper">
-           
-            <div class="">
-             <p class="small">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url() ?>">Fundraise</a>, All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
 
     </div>
   </div>

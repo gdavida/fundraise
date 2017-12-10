@@ -118,11 +118,22 @@ add_action( 'widgets_init', 'fundraise17_widgets_init' );
  */
 function fundraise17_scripts() {
 	wp_enqueue_style( 'fundraise17-style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'fundraise17-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'fundraise17-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/js/swiper.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20151215', true );
+	wp_enqueue_script( 'ajax-mail', get_template_directory_uri() . '/js/ajax-mail.js', array(), '20151215', true );
+	wp_enqueue_script( 'ajax-subscribe', get_template_directory_uri() . '/js/ajax-subscribe.js', array(), '20151215', true );
+	wp_enqueue_script( 'googlemaps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyC8hjTJwTaYk3q7ccXZ9SNl5F9Ey6UPEhg", '20151215', true );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/appai.map-2.js', array(), '20151215', true );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
+
+
+
+
 
 //materialize
 	wp_enqueue_script( 'fundraise17-materialize-min', get_template_directory_uri() . '/js/materialize/bin/materialize.min.js', array(), '', true );

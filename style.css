@@ -2211,7 +2211,7 @@ a {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -3619,8 +3619,8 @@ small {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
-  transition: box-shadow .25s;
-  border-radius: 2px; }
+  /*  transition: box-shadow .25s;
+    border-radius: 2px;*/ }
   .card .card-title {
     font-size: 24px;
     font-weight: 300; }
@@ -3658,7 +3658,8 @@ small {
     .card.horizontal .card-image {
       max-width: 50%; }
       .card.horizontal .card-image img {
-        border-radius: 2px 0 0 2px;
+        /*        border-radius: 2px 0 0 2px;
+        */
         max-width: 100%;
         width: auto; }
     .card.horizontal .card-stacked {
@@ -7462,20 +7463,24 @@ p.org-title {
 
 h1, .h1 {
   font-size: 40px !important;
-  color: #909091; }
+  color: #7d7d7d; }
 
 h2, .h2 {
-  font-size: 28px !important; }
+  font-size: 28px !important;
+  color: #7d7d7d; }
 
 h3, .h3 {
   font-size: 18px !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #7d7d7d; }
 
 h4, .h4 {
-  font-size: 18px !important; }
+  font-size: 18px !important;
+  color: #7d7d7d; }
 
 h5, .h5 {
-  font-size: 14px !important; }
+  font-size: 14px !important;
+  color: #7d7d7d; }
 
 p {
   margin-bottom: 1.5em; }
@@ -7850,13 +7855,13 @@ nav .nav-wrapper {
     padding-left: 40px;
     width: 100%;
     display: none; }
-  .side-item-wrapper.active a {
+  .side-item-wrapper.active a.title {
     background: #aa076b47;
     /* fallback for old browsers */
     background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white !important; }
-    .side-item-wrapper.active a svg {
+    .side-item-wrapper.active a.title svg {
       fill: url(#MyGradient); }
   .side-item-wrapper.active ul {
     display: block; }
@@ -8047,10 +8052,15 @@ div#content {
 
 body.page main.container {
   margin: 0 auto; }
+body.page main.form-template {
+  margin-top: 80px !important; }
 
 body.page main.frontpage .container-fluid,
 body.home main.frontpage .container-fluid {
   padding: 80px 0; }
+
+main.form-template {
+  margin-top: 80px !important; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -8311,8 +8321,7 @@ main.frontpage .hero {
   margin-top: 20px;
   padding-bottom: 80px;
   background-color: #ffffff;
-  padding: 20px 50px;
-  border-radius: 8px; }
+  padding: 20px 50px; }
 
 /*---------------------------
  - /Org - Store
@@ -8361,6 +8370,15 @@ main.frontpage .hero {
     padding: 7px;
     border-radius: 50%;
     border: 1px solid lightgray; }
+
+/* ADD AN ORG PAGE */
+nav.navbar.inside {
+  position: fixed;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  background: white; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

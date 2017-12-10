@@ -150,7 +150,7 @@ nav .nav-wrapper {
     display: none;
   }
   &.active {
-  	  a {
+  	  a.title {
 			background: #aa076b47; /* fallback for old browsers */
 			background: linear-gradient(to left, #191f28 78%, #e5659021, #e565904a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	  	color: white !important;

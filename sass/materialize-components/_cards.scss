@@ -13,9 +13,8 @@
   position: relative;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   background-color: $card-bg-color;
-  transition: box-shadow .25s;
-  border-radius: 2px;
-  @extend .z-depth-1;
+/*  transition: box-shadow .25s;
+  border-radius: 2px;*/
 
 
   .card-title {
@@ -80,8 +79,8 @@
     .card-image {
       max-width: 50%;
       img {
-        border-radius: 2px 0 0 2px;
-        max-width: 100%;
+/*        border-radius: 2px 0 0 2px;
+*/        max-width: 100%;
         width: auto;
       }
     }
